@@ -1,14 +1,18 @@
-import React from 'react';
-import { Meteor } from 'meteor/meteor';
-import CreateAccount from '/imports/ui/CreateAccount.jsx';
+import React,{Component} from 'react';
+import  Meteor  from 'meteor/meteor';
+import route from '/imports/routing/router.js';
+import Footer from '/imports/ui/Footer.jsx';
+import  Navbar from '/imports/ui/Navbar.jsx';
 // samuel
-export class ContactForm extends React.Component {
+
+
+export  default class ContactUs extends Component {
     constructor(props) {
       super(props);
       this.state = {value: '' ,text: '', text:'' ,email:'' ,number:'' ,message:''};
-  
+
     }
-  
+
     handleChange(event) {
       this.setState({value: event.target.value});
     }
@@ -25,10 +29,11 @@ export class ContactForm extends React.Component {
       alert(' thank you for communicating with us.: ' + this.state.value);
       event.preventDefault();
     }
-    
+
     render() {
       return (
         <div>
+          <Navbar ContactUs={'active'}/>
         <div className="wrapper">
         <div>
         <img src="images/contact_us_vertical-357x1024-1.jpg" alt="contact_us_vertical-357x1024-1.jpg" />
@@ -39,7 +44,7 @@ export class ContactForm extends React.Component {
         <form onSubmit={this.handleSubmit}>
         <div className="One">
         <label>
-          
+
           <input type="text" placeholder="Full name" value={this.state.name} onChange={(event)=>{this.onChange('text',event)}} required/>
           </label> <br/>
           </div>
@@ -65,9 +70,12 @@ export class ContactForm extends React.Component {
         </form>
         </div>
         </div>
-        
+
         </div>
         <div className="fade_rule"></div>
+        <div>
+        <Footer/>
+        </div>
         </div>
         );
       }

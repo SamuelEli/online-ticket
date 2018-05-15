@@ -1,15 +1,18 @@
-import React from 'react';
+import React,{Component} from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Accounts } from 'meteor/accounts-base';
+import route from '/imports/routing/router.js';
+import Footer from '/imports/ui/Footer.jsx';
+import  Navbar from '/imports/ui/Navbar.jsx';
 // samuel
-export default class CreateAccount extends React.Component {
+export default class CreateAccount extends Component {
 
     constructor(props){
       super(props);
       this.state = {
         error :"",
         error2 :"",
-  
+
       }
     }
   //   goToContacts = () => {
@@ -23,7 +26,7 @@ export default class CreateAccount extends React.Component {
       const phone = target.phone.value;
       const password = target.password.value;
       const password2 = target.password2.value;
-  
+
      if(password.trim()!==password2.trim()){
        this.setState({
          error: "Passwords do not match"
@@ -40,7 +43,7 @@ export default class CreateAccount extends React.Component {
      const user = {
        email,
        password,
-  
+
        profile: {
          name,
          phone,
@@ -50,11 +53,14 @@ export default class CreateAccount extends React.Component {
      Accounts.createUser(user,error=>{
        error ? console.log(error.reason) : console.log("Account Created Successfully")
      }) ;
-  
+
     }
-  
+
     render(){
       return(
+        
+        <div>
+          <Navbar CreateAccount={'active'}/>
         <div>
           <div className="CreateAccount">
           <div className="row justify-content-center">
@@ -96,10 +102,12 @@ export default class CreateAccount extends React.Component {
             <div className="text-center">
                 <p>Sign up Now!</p>
             </div>
-  
+
         </div>
         </div>
+      </div>
         </div>
+        <Footer/>
         </div>
       )
     }
