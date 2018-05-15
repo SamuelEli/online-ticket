@@ -1,0 +1,154 @@
+/* NEW STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family:'Fira Sans', sans-serif;
+  font-weight: normal;
+  color: #575859;
+  letter-spacing: .5px;
+}
+
+.header {
+  background: linear-gradient(to bottom, #00b891 20%,#1ebcb4 80%);
+  color: #fff;
+  height: 190vh;
+  position: relative;
+  padding-bottom: 2rem;
+  clip-path: polygon(100% 100%, 0 90%, 0 0, 100% 0);
+}
+
+nav {
+  background: #00b891;
+  box-shadow: none;
+  padding-top: 2em;
+  z-index: 100000;
+  padding-bottom: 6em;
+  line-height: 40px;
+  display: block;
+}
+
+
+h3 {
+  margin: 2.1rem 0 1.68rem 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 1px 5px 2px #27282920;
+}
+
+.paragraph-header {
+  font-size: 1.74rem;
+}
+
+.brand-logo #logo {
+  font-weight: 400;
+  letter-spacing: .1px;
+  color: #fdfdfd;
+}
+
+#logo {
+  font-family: 'Pacifico', cursive;
+  text-decoration-line: underline;
+}
+
+h6 a {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+
+Input {
+  color: #00b891;
+}
+
+Input::placeholder {
+  color: #00b890;
+  font-size: 1.1rem;
+}
+
+#button {
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+}
+
+#about {
+  padding: 2em 0;
+  color: #685f5f;
+  font-size: 1.3rem;
+}
+
+a {
+  color: #ffab00;
+}
+
+.about {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+
+.component {
+  position: relative;
+  padding: 6em 0 8em;
+  background: linear-gradient(to right, #dfe7e6, #eee8e8);
+  clip-path: polygon(100% 100%, 0 82%, 0 0, 100% 18%);
+  /* margin-bottom: -6rem 0; */
+}
+
+.component-one {
+  margin-top: 0;
+  text-align: center;
+  padding: 8em 0 8em;
+  position: relative;
+  background: linear-gradient(to bottom, #00b891 20%,#1ebcb4 80%);
+  clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 18%);
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.component-two {
+  background:#eee8e8;
+  clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
+}
+
+
+.title {
+  color: #00b890;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.items {
+  flex: 1;
+  padding: 2em 0;
+  color: #685f5f;
+  font-size: 1.1rem;
+}
+
+
+.page-footer {
+padding-top: 20px;
+color: #979899;
+background-color: #272829;
+font-size: 0.8rem;
+}
+
+.page-copyright .page-copyright {
+/* background: #171819; */
+text-transform: uppercase;
+font-size: x-small;
+letter-spacing: 1.4px;
+font-family:'Fira Sans', sans-serif;
+color: #979899;
+}
+
+.new {
+  padding: 2.9rem 0;
+}
