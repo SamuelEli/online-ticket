@@ -13,7 +13,16 @@ export default class Home extends Component {
                         <nav>
                             <div className="nav-wrapper">
                                 <h6><a href="#" className="brand-logo"> <span id="logo"> On|Bus Services </span> </a></h6>
+                                <a className="button-collapse sidenav-trigger" data-target="mobile-nav" href="#">
+                                    <i className="material-icons">menu</i>
+                                </a>
+                                
                                 <ul className="right hide-on-med-and-down">
+                                    <li> <a href="#" active="true" className="active">Home</a></li>
+                                    <li> <a href="#" id="button">Routes</a></li>
+                                    <li> <a href="#" className="waves-effect btn amber accent-4">Contact Us</a></li>
+                                </ul>
+                                <ul className="side-nav" id="mobile-nav" >
                                     <li> <a href="#" active="true">Home</a></li>
                                     <li> <a href="#" id="button">Routes</a></li>
                                     <li> <a href="#" className="waves-effect btn amber accent-4">Contact Us</a></li>
@@ -75,7 +84,7 @@ export default class Home extends Component {
                                                             </Input>
                                                             <Input s={12} type="date" className="datepicker" placeholder="Pick a Day"/>
                                                             <Input s={12} type="time" className="timepicker" placeholder="Pick a Time"/>
-                                                            <a href="#" className="waves-effect btn-large amber accent-4 left-align p2">Search</a>
+                                                            <a href="#" className="waves-effect btn-large amber accent-4 left-align p2">Reserve</a>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -169,8 +178,8 @@ export default class Home extends Component {
                         </div>
                         <div className="footer-copyright black">
                             <div className="container">
-                            © 2014 Copyright Text
-                            <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
+                                &copy; 2018
+                            <a className="grey-text text-lighten-4 right" href="#!">Terms and Conditions</a>
                             </div>
                         </div>
                     </footer>
@@ -190,3 +199,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Timepicker.init(elems, options);
   });
 
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
