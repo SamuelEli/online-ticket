@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import '/imports/startup/client/index.js';
 import route from '/imports/routing/router.js';
@@ -14,3 +15,12 @@ import Posts from '/imports/api/blog/collections.js';
   function onExpand(expanded, record) {
     console.log('onExpand', expanded, record);
   }*/
+
+// import React from 'react';
+// import { Meteor } from 'meteor/meteor';
+// import { render } from 'react-dom';
+// import App from '../imports/ui/app.jsx';
+//
+//  Meteor.startup(() => {
+//   render(<App />, document.getElementById('render-target'));
+// });

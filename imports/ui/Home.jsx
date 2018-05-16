@@ -1,3 +1,4 @@
+
 import {Meteor} from 'meteor/meteor';
 import React, { Component } from 'react';
 import route from '/imports/routing/router.js';
@@ -64,7 +65,7 @@ import Posts from '/imports/api/blog/collections.js';
 
     <tr>
       <td>Kitwe</td>
-      <td>Chipata</tdimport '/imports/api/reservation/methods.js';import '/imports/api/reservation/methods.js';
+      <td>Chipata</td>
       <td>11:00hrs</td>
       <td>K500</td>
     </tr>
@@ -75,8 +76,9 @@ import Posts from '/imports/api/blog/collections.js';
       <td>06:00hrs</td>
       <td>11:00hrs</td>
       <td>K500</td>
+
     </tr>
-import '/imports/api/reservation/methods.js';
+
     <tr>
       <td>Kitwe</td>
       <td>Chipata</td>
@@ -98,4 +100,3 @@ import '/imports/api/reservation/methods.js';
     )
   }
 }
-// Code provided by Mapalo

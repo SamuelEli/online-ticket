@@ -17,6 +17,7 @@ es5-shim@4.7.0                # ECMAScript 5 compatibility for older browsers
 ecmascript@0.10.6              # Enable ECMAScript2015+ syntax in app code
 shell-server@0.3.1            # Server-side component of the `meteor shell` command
 
+<<<<<<< HEAD
 insecure@1.0.7                # Allow all DB writes from clients (for prototyping)
 accounts-password
 meteortoys:allthings
@@ -25,3 +26,14 @@ react-meteor-data
 accounts-base
 session
 fortawesome:fontawesome
+=======
+autopublish@1.0.7             # Publish all data to the clients (for prototyping)
+insecure@1.0.7                # Allow all DB writes from clients (for prototyping)
+react-meteor-data
+materialize:materialize
+fortawesome:fontawesome
+accounts-password
+accounts-ui
+meteortoys:allthings
+cultofcoders:meteor-react-routing
+>>>>>>> 48ba6e3a9229c2d5770fc286d2bb3dc03af1b6f0

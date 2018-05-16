@@ -1,4 +1,5 @@
 import { Meteor } from 'meteor/meteor';
+<<<<<<< HEAD
 import moment from 'moment';
 import '/imports/api/methods.js'
 import '/imports/routing/index.js'
@@ -25,3 +26,7 @@ console.log("this is the date:" + date);
 //Printing the date on the console
 // const date = moment(new Date()).format('DD-MM-YYYY');
 // console.log(`This is the date: ${date}`);
+=======
+// import  '/imports/routing/index.js';
+import '/imports/routing';
+>>>>>>> 48ba6e3a9229c2d5770fc286d2bb3dc03af1b6f0

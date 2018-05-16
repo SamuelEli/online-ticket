@@ -1,3 +1,4 @@
+
 /*table {
     font-family: Times New Roman, blackheart;
     border: absolute;
@@ -138,5 +139,138 @@ Input::placeholder {
 }
 
 .button {
-    border-radius: 2px solid #ffab00;
+    border-radius: 2px solid #ffab00
+/* Samuel Eli */
+
+.nav-wrapper{
+  background-color:#01579B;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff 100%);
+    background-attachment: fixed;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .ContactHeader{
+    padding-top: -0.1px;
+    color: white;
+    margin-left: 100px;
+
+  }
+  .wrapper {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6px;
+  grid-auto-rows: minmax(100px, auto);
+
+  }
+
+  /* .contactForm{
+    margin-left: -50%;
+  } */
+
+.lines{
+  margin-top: 15%;
+  width: 150%;
+  /* margin-left: -13%; */
+  margin-left: 50%;
+}
+
+  #submitbtn{
+    border: 0;
+    background: #304FFE;
+    padding: .5rem;
+    color: white;
+    margin: 1rem 0;
+    width: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .7s background ease;
+  }
+
+  #submitbtn:hover{
+    background:#304FFE;
+  }
+
+  .textAreaPref{
+    height: 103px;
+  }
+
+  /* CreateAccount */
+.CreateAccount{
+margin-top: 15%;
+width: 40%;
+margin-left: 15%;
+}
+
+#submitbtn{
+  border: 0;
+  background: #304FFE;
+  padding: .5rem;
+  color: white;
+  margin: 1rem 0;
+  width: auto;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .7s background ease;
+}
+
+#submitbtn:hover{
+  background:#304FFE;
+}
+#submitbtn{
+  border: 0;
+  background: #304FFE;
+  padding: .5rem;
+  color: white;
+  margin: 1rem 0;
+  width: auto;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .7s background ease;
+}
+
+#submitbtn:hover{
+  background:#304FFE;
+}
+
+/* horizontal line */
+.fade_rule {
+  height: 1px;
+  background-color: #E6E6E6;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 100px;
+  background-image: linear-gradient(left , white 2%, #E6E6E6 50%, white 98%);
+  background-image: -o-linear-gradient(left , white 2%, #E6E6E6 50%, white 98%);
+  background-image: -moz-linear-gradient(left , white 2%, #E6E6E6 50%, white 98%);
+  background-image: -webkit-linear-gradient(left , white 2%, #E6E6E6 50%, white 98%);
+  background-image: -ms-linear-gradient(left , white 2%, #E6E6E6 50%, white 98%);
+  background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.02, white), color-stop(0.5, gray), color-stop(0.98, white) );
+}
+/*Samuel Eli Ends here */
+
+
+/*sarah kabani starts here*/
+
+.page-footer{
+  background-color: rgb(10,42,57);
+  height: 490px;
+  font-weight: 23px;
+  color: #112D32;
+  font-family: sans-serif;
+}
+
+.blue-text{
+  font-size: 25px;
+
 }
