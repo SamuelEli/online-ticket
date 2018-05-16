@@ -32,15 +32,16 @@ body {
 
   }
 
-  .contactForm{
+  /* .contactForm{
     margin-left: -50%;
-  }
+  } */
 
 .lines{
   margin-top: 15%;
-  width: 70%;
-  margin-left: -13%;
-  }
+  width: 150%;
+  /* margin-left: -13%; */
+  margin-left: 50%;
+}
 
   #submitbtn{
     border: 0;

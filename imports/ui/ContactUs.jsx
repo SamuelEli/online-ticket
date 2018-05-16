@@ -3,7 +3,6 @@ import  Meteor  from 'meteor/meteor';
 import route from '/imports/routing/router.js';
 import Footer from '/imports/ui/Footer.jsx';
 import  Navbar from '/imports/ui/Navbar.jsx';
-// samuel
 
 
 export  default class ContactUs extends Component {
@@ -35,9 +34,6 @@ export  default class ContactUs extends Component {
         <div>
           <Navbar ContactUs={'active'}/>
         <div className="wrapper">
-        <div>
-        <img src="images/contact_us_vertical-357x1024-1.jpg" alt="contact_us_vertical-357x1024-1.jpg" />
-        </div>
 
         <div className="lines">
         <div className="contactForm">
@@ -80,4 +76,3 @@ export  default class ContactUs extends Component {
         );
       }
     }
-// samuel
