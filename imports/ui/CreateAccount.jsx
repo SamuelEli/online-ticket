@@ -58,9 +58,15 @@ export default class CreateAccount extends Component {
 
     render(){
       return(
-        
+
         <div>
           <Navbar CreateAccount={'active'}/>
+          <br/>
+
+          <div className="text-center">
+            <a className="waves-effect waves-light btn" href="Modal">Modal</a>
+          </div>
+
         <div>
           <div className="CreateAccount">
           <div className="row justify-content-center">
@@ -70,7 +76,7 @@ export default class CreateAccount extends Component {
           </div>
             <form onSubmit = {this.getUserData} className="needs-validation">
                 <div className="form-group">
-                    <label className="col-form-label" htmlFor="formGroupExampleInput">Organization Name</label>
+                    <label className="col-form-label" htmlFor="formGroupExampleInput">FIRST NAME</label>
                     <input type="text" className="form-control" name="name" id="formGroupExampleInput" placeholder="Enter Name" required />
                 </div>
                 <div className="form-group">
@@ -82,8 +88,8 @@ export default class CreateAccount extends Component {
                     <input type="number" className="form-control" name="phone" id="formGroupExampleInput2" placeholder="Enter Phone Number" required/>
                 </div>
                 <div className="form-group">
-                    <label className="col-form-label" htmlFor="formGroupExampleInput2">Password</label>
-                    <input type="password" className="form-control" name="password" id="formGroupExampleInput2" placeholder="Choose Password"  required/>
+                    <label className="col-form-label" htmlFor="formGroupExampleInput2">Email Address</label>
+                    <input type="password" className="form-control" name="email" id="formGroupExampleInput2" placeholder="Choose Password"  required/>
                     <p style={{color:"red"}}>{this.state.error2}</p>
                 </div>
                 <div className="form-group">
@@ -102,14 +108,12 @@ export default class CreateAccount extends Component {
             <div className="text-center">
                 <p>Sign up Now!</p>
             </div>
-
-        </div>
         </div>
       </div>
+    </div>
         </div>
         <Footer/>
         </div>
       )
     }
   }
-  // samuel

@@ -19,10 +19,10 @@ goToCreate= ()=>{
 route.go("/CreateAccount");
 }
 
-// goToLogIn= ()=>{
-//
-// route.go("/LogIn");
-// }
+goToLogIn= ()=>{
+
+route.go("/LogIn");
+}
 
 
 
