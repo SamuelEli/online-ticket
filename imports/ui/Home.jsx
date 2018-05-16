@@ -48,19 +48,19 @@ import Posts from '/imports/api/blog/collections.js';
 
   <tr>
       <td>Kitwe</td>
-      <td>Chipata</td>document.addEventListener('DOMContentLoaded', function() {
+      <td>Chipata</td>
 >
       <td>Kitwe</td>
       <td>Chipata</td>
       <td>06:00hrs</td>
       <td>11:00hrs</td>
-      <td>K500</td>document.addEventListener('DOMContentLoaded', function() {
+      <td>K500</td>
 >
       <td>Kitwe</td>
-      <td>Chipata</td>withTracker
+      <td>Chipata</td>
       <td>06:00hrs</td>
       <td>11:00hrs</td>
-      <td>K500</td>document.addEventListener('DOMContentLoaded', function() {
+      <td>K500</td>
     </tr>
 
     <tr>

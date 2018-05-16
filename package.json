@@ -1,27 +1,18 @@
 {
-<<<<<<< HEAD
   "name": "my_cool_app",
-=======
   "name": "simple-todos",
->>>>>>> 48ba6e3a9229c2d5770fc286d2bb3dc03af1b6f0
   "private": true,
   "scripts": {
     "start": "meteor run"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "@babel/runtime": "^7.0.0-beta.42",
-    "bcrypt": "^2.0.1",
-    "meteor-node-stubs": "^0.3.2",
-    "moment": "^2.22.1",
-=======
-    "@babel/runtime": "^7.0.0-beta.46",
-    "bcrypt": "^2.0.1",
-    "materialize-css": "^1.0.0-rc.1",
-    "meteor-node-stubs": "^0.3.2",
->>>>>>> 48ba6e3a9229c2d5770fc286d2bb3dc03af1b6f0
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "react-mounter": "^1.2.0"
+  "moment": "^2.22.1",
+  "@babel/runtime": "^7.0.0-beta.46",
+  "bcrypt": "^2.0.1",
+  "materialize-css": "^1.0.0-rc.1",
+  "meteor-node-stubs": "^0.3.2",
+  "react": "^16.3.2",
+  "react-dom": "^16.3.2",
+  "react-mounter": "^1.2.0"
   }
 }
