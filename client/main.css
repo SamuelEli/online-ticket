@@ -1,0 +1,142 @@
+/*table {
+    font-family: Times New Roman, blackheart;
+    border: absolute;
+    width: 100%;
+}
+
+ th {
+    background-color: #;
+    border: 1px solid #5D5C61,#379683;
+    text-align: left ;
+
+}
+th, td {
+    padding: 20px;
+}
+.table{
+  border-bottom: 1px solid;
+  border-spacing: none;*/
+}
+/* demo styles */
+
+/*@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body{
+  background: -webkit-linear-gradient(left, #315481, #918e82);
+  background: linear-gradient(to right,#315481, #918e82);
+  font-family: 'blackheart', sans-serif;
+
+}
+/*body {
+   font-family: sans-serif;
+   background-image: linear-gradient(to bottom, #315481
+, #918e82
+100%);
+   background-attachment: fixed;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   padding: 0;
+   margin: 0;
+   font-size: 14px;
+ }*/
+/*section{
+  margin: 50px;
+}
+
+
+.made-with-love i {
+  font-style: normal;
+  color: #F50057;
+  font-size: 14px;
+  position: relative;
+}
+.made-with-love a {
+  color: #fff;
+  text-decoration: none;
+}
+.made-with-love a:hover {
+  text-decoration: underline;
+}*/
+/* CSS declarations go here */
+
+/*Styling provided by Enoch*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 16px;
+    font-family:'Fira Sans', sans-serif;
+    font-weight: normal;
+    color: #575859;
+    letter-spacing: .5px;
+
+}
+
+.header {
+    background: linear-gradient(to bottom, #00b891 20%,#1ebcb4 80%);
+    color: #fff;
+    height: 220vh;
+    position: relative;
+    margin-bottom: 6em;
+    clip-path: polygon(100% 100%, 100% 0, 0 0, 0 86%);
+
+}
+
+nav {
+    background: #00b891;
+    box-shadow: none;
+    padding-top: 2em;
+    z-index: 100000;
+    padding-bottom: 6em;
+    line-height: 40px;
+    display: block;
+
+}
+
+h3 {
+    margin: 2.1rem 0 1.68rem 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0px 3px 2px #27282920;
+}
+
+/*
+
+.btn-large {
+
+    background: #fff;
+
+    color:
+
+} */
+
+.brand-logo {
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+h6 a {
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+Input {
+    color: #00b891;
+}
+
+Input::placeholder {
+    color: #00b890;
+    font-size: 1rem;
+
+}
+
+.button {
+    border-radius: 2px solid #ffab00;
+}
