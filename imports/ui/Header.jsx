@@ -5,9 +5,6 @@ import { Row, Input } from 'react-materialize';
 import route from '/imports/routing/router.js';
 
 
-
-
-
 export default class Header extends Component {
     render() {
         return(
@@ -36,8 +33,8 @@ export default class Header extends Component {
                                             <img className="activator" src="images/black.svg" alt=""/>
                                         </div>
                                         <div>
-                                            <span className="card-title activator grey-text text-accent-4">Click on image<i className="material-icons right">more_vert</i></span>
-                                            {/* <p><a href="#">Click to reserve your Ticket</a></p> */}
+                                            <span className="card-title activator amber-text text-accent-4">Card Title<i className="material-icons right">more_vert</i></span>
+                                            <p><a href="#">Click to reserve your Ticket</a></p>
                                         </div>
                                         <div className="card-reveal">
                                             <span className="card-title grey-text text-darken-4"><i className="material-icons right">close</i>Tell us where you want to go <i className="material-icons left"></i></span>
