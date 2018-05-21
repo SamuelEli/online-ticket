@@ -54,7 +54,7 @@ h3 {
 
 #logo {
   font-family: 'Pacifico', cursive;
-  /* text-decoration-line: underline; */
+  text-decoration-line: underline;
 }
 
 h6 a {
@@ -151,4 +151,14 @@ color: #979899;
 
 .new {
   padding: 2.9rem 0;
+}
+
+.PopHeader {
+  background-color: #112D30;
+  color: white;
+  text-align: center;
+  margin-bottom: 3%;
+ background-position: 100% 100%;
+ background-repeat: no-repeat;
+
 }

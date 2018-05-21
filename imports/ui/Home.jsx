@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import 'react-materialize';
 import { Row, Input } from 'react-materialize';
+import ReservationForm from '/imports/ui/ReservationForm';
+import ContactUs from './ContactUs';
 
 
 export default class Home extends Component {
@@ -20,12 +21,12 @@ export default class Home extends Component {
                                 <ul className="right hide-on-med-and-down">
                                     <li> <a href="#" active="true" className="active">Home</a></li>
                                     <li> <a href="#" id="button">Routes</a></li>
-                                    <li> <a href="#" className="waves-effect btn amber accent-4">Contact Us</a></li>
+                                    <li> <a href="ReservationForm" className="waves-effect btn amber accent-4">Contact Us</a></li>
                                 </ul>
                                 <ul className="side-nav" id="mobile-nav" >
                                     <li> <a href="#" active="true">Home</a></li>
                                     <li> <a href="#" id="button">Routes</a></li>
-                                    <li> <a href="#" className="waves-effect btn amber accent-4">Contact Us</a></li>
+                                    <li> <a href="ReservationForm" className="waves-effect btn amber accent-4">ReservationForm</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -189,17 +190,17 @@ export default class Home extends Component {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('select');
-    var instances = M.FormSelect.init(elems, options);
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//     var elems = document.querySelectorAll('select');
+//     var instances = M.FormSelect.init(elems, options);
+// });
 
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.timepicker');
-    var instances = M.Timepicker.init(elems, options);
-  });
+// document.addEventListener('DOMContentLoaded', function() {
+//     var elems = document.querySelectorAll('.timepicker');
+//     var instances = M.Timepicker.init(elems, options);
+//   });
 
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-  });
+//   document.addEventListener('DOMContentLoaded', function() {
+//     var elems = document.querySelectorAll('.sidenav');
+//     var instances = M.Sidenav.init(elems, options);
+//   });

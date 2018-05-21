@@ -1,35 +1,37 @@
-import React from 'react';
+// import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import Home from './Home';
-import ReservationForm from './ReservationForm';
+import React, {Component} from 'react';
+// import ReactDOM from 'react-dom';
+import HomePage from './HomePage';
+// import Navbar from './Navbar';
+// import Header from './Header';
+// import BodyComponent from './BodyComponent';
+// import { Footer } from './Footer';
 
 
-// export default () => {
-//   return (
-//         <div id="app">
-//             {React.createElement()}
-//             <Home/>
-//             <ReservationForm/>
-//         </div>
-//     )
-// }
+
+export default ({main, routeProps}) => {
+  return (
+        <div id="app">
+            {React.createElement(main, routeProps)}
+        </div>
+    )
+}
 
 
 
 // import {ContactForm} from '/imports/ui/ContactForm.jsx';
 // import CreateAccount from '/imports/ui/CreateAccount.jsx';
-// import CreateAccount from '/imports/ui/footerPage.jsx';
+// // import CreateAccount from '/imports/ui/footerPage.jsx';
+//import { ReactDOM } from 'react-dom';
 
-export class App extends React.Component{
-    render(){
-        return(
-            <div>
-            {/* <ContactForm/> */}
-            {/* <CreateAccount/> */}
-            {/* <ReserveForm/> */}
-            <Home/>
-            {/* <ReservationForm/> */}
-            </div>
-        );
-    }
-}
+
+// export default class App extends Component {
+//     render(){
+//         return(
+//             <div>
+//                 <HomePage/>
+//             </div>
+//         );
+//     }
+// }

@@ -1,82 +1,92 @@
-// import React,{Component} from 'react';
-// import  Meteor  from 'meteor/meteor';
-// import route from '/imports/routing/router.js';
-// import Footer from '/imports/ui/Footer.jsx';
-// import  Navbar from '/imports/ui/Navbar.jsx';
+import React,{Component} from 'react';
+import  Meteor  from 'meteor/meteor';
+import route from '/imports/routing/router.js';
+import Footer from '/imports/ui/Footer.jsx';
+import  Navbar from '/imports/ui/Navbar.jsx';
+import { Modal, Button } from 'react-materialize';
+import Input from 'react-materialize/lib/Input';
 
+export  default class ContactUs extends Component {
+  constructor(props) {
+    super(props);
+     this.state = {value: '' ,text: '', text1:'' ,email:'' ,number:'',tel:'',message:''};
+  }
+  handleSubmit = () =>{
+    alert(
+      "MESSAGE SENT."
+    );
+  }
 
-// export  default class ContactUs extends Component {
-//     constructor(props) {
-//       super(props);
-//       this.state = {value: '' ,text: '', text:'' ,email:'' ,number:'' ,message:''};
+    handleChange(event) {
+      this.setState({value: event.target.value});
+    }
+    
+    onChange(state,event){
+      let val = {};
+      
+      val[state] = event.target.value;
+      this.setState(val)
+    }
 
-//     }
+    render() {
+      return (
+        <div>
 
-//     handleChange(event) {
-//       this.setState({value: event.target.value});
-//     }
+          <div className="ContactHeader">
+          <div className="container">
+            <Modal
+    
+              fixedFooter
+              trigger={<Button> Contact Us</Button>}>
 
-//     onChange(state,event){
-//       let val = {};
+              <div className="">
+              <div className="PopHeader">
+                <h3>Contact Us</h3>
+                </div>
+              <form onSubmit={this.handleSubmit}>
+              <div className="One">
+              <label>
+              <Input s={6} ref="name" label="Full Name" type="text" size="30" value={this.state.text} text="validate" onChange={(event)=>{this.onChange('text',event)}} />
+              </label><br/>
+              </div>
 
+              <div className="Two">
+              <label>
+              <Input s={6} refs="email" label="Email" type="email"  value={this.state.emeil} className="validate" onChange={(event)=>{this,ochange('email',event)}}/>
+              </label><br/>
+              </div>
 
-//      val[state] = event.target.value;
-//      this.setState(val)
-//     }
+              <div className="Three">
+              <label>
+              <Input s={12} label="Number" type="number"  value={this.state.tel} id="icon_telephone" className="validate"
+               onChange={(event)=>{this.onChange('tel',event)}}
+               />
+              </label><br/>
+              </div>
 
-//     handleSubmit(event) {
-//       alert(' thank you for communicating with us.: ' + this.state.value);
-//       event.preventDefault();
-//     }
+              <div className="Four">
+              <label>
+              <Input label="Message" type="textarea"  value={this.state.text1} onChange={(event) =>{this.onChange('text1',event)}}/>
+              </label>
 
-//     render() {
-//       return (
-//         <div>
-//           <Navbar ContactUs={'active'}/>
-//         <div className="wrapper">
-//         <div>
-//         <img src="images/contact_us_vertical-357x1024-1.jpg" alt="contact_us_vertical-357x1024-1.jpg" />
-//         </div>
+                 <button className="btn waves-effect waves-light" type="submit" name="action">Submit
+              <i className="material-icons right">send</i>
+              </button>
+              </div>
+           
+              </form>
+              </div>
+            </Modal>
+          </div>
+          </div>
+        </div>
+        );
+      }
+    }
 
-//         <div className="lines">
-//         <div className="contactForm">
-//         <form onSubmit={this.handleSubmit}>
-//         <div className="One">
-//         <label>
+// JS FOR MODAL
 
-//           <input type="text" placeholder="Full name" value={this.state.name} onChange={(event)=>{this.onChange('text',event)}} required/>
-//           </label> <br/>
-//           </div>
-
-//           <div className="Two">
-//           <label>
-//             <input type="email" placeholder="Email" value={this.state.email} onChange={(event)=>{this.onChange('email',event)}} required/>
-//           </label><br/>
-//           </div>
-
-//           <div className="Three">
-//           <label>
-//             <input type="number" placeholder="Number" value={this.state.number} onChange={(event)=>{this.onChange('number',event)}} required/>
-//           </label><br/>
-//           </div>
-
-//           <div className="Four">
-//           <label>
-//             <textarea className="textAreaPref" type="text" placeholder="Message" value={this.state.message} onChange={(event)=>{this.onChange('message',event)}}></textarea>
-//           </label><br/>
-//           </div>
-//           <input type="submit" value="Submit Message" id="submitbtn"/>
-//         </form>
-//         </div>
-//         </div>
-
-//         </div>
-//         <div className="fade_rule"></div>
-//         <div>
-//         <Footer/>
-//         </div>
-//         </div>
-//         );
-//       }
-//     }
-// // samuel
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.modal');
+  // var instances = M.Modal.init(elems, options);
+});
