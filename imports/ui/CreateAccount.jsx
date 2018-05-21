@@ -50,10 +50,12 @@ export default class CreateAccount extends Component {
        },
        createdAt: new Date()
      }
-     Accounts.createUser(user,error=>{
-       error ? console.log(error.reason) : console.log("Account Created Successfully")
-     }) ;
 
+     Accounts.createUser(user,error=>{
+       error ? console.log(error.reason) :
+       console.log("Account Created Successfully");
+     }) ;
+     route.go('/price page')
     }
 
     render(){
@@ -80,8 +82,8 @@ export default class CreateAccount extends Component {
                     <input type="text" className="form-control" name="name" id="formGroupExampleInput" placeholder="Enter Name" required />
                 </div>
                 <div className="form-group">
-                    <label className="col-form-label" htmlFor="formGroupExampleInput2">Email Address</label>
-                    <input type="email" className="form-control" name="email" id="formGroupExampleInput2" placeholder="Enter Email Address" required/>
+                    <label className="col-form-label" htmlFor="formGroupExampleInput2">LAST NAME</label>
+                    <input type="text" className="form-control" name="name" id="formGroupExampleInput2" placeholder="Enter Last Name" required/>
                 </div>
                 <div className="form-group">
                     <label className="col-form-label" htmlFor="formGroupExampleInput2">Contact Number</label>
@@ -89,14 +91,14 @@ export default class CreateAccount extends Component {
                 </div>
                 <div className="form-group">
                     <label className="col-form-label" htmlFor="formGroupExampleInput2">Email Address</label>
-                    <input type="password" className="form-control" name="email" id="formGroupExampleInput2" placeholder="Choose Password"  required/>
+                    <input type="emails" className="form-control" name="email" id="formGroupExampleInput2" placeholder="Enter Email Address"  required/>
                     <p style={{color:"red"}}>{this.state.error2}</p>
                 </div>
-                <div className="form-group">
+                {/* <div className="form-group">
                     <label className="col-form-label" htmlFor="formGroupExampleInput2">Confirm Password</label>
                     <input type="password" className="form-control" name="password2" id="formGroupExampleInput2" placeholder="Enter Password Again"required/>
                     <p style={{color:"red"}}>{this.state.error}</p>
-                </div>
+                </div> */}
                 <div className="form-group">
                     <label className="col-form-label" htmlFor="formGroupExampleInput2">Location</label>
                     <input type="text" className="form-control" name="location" id="formGroupExampleInput2" placeholder="Enter Town Name" required/>
