@@ -1,48 +1,48 @@
 import React,{Component} from 'react';
-import { Meteor } from 'meteor/meteor';
-import { Accounts } from 'meteor/accounts-base';
-import route from '/imports/routing/router.js';
-import Footer from '/imports/ui/Footer.jsx';
-import  Navbar from '/imports/ui/Navbar.jsx';
-// samuel
-export default class CreateAccount extends Component {
+// import { Meteor } from 'meteor/meteor';
+// import { Accounts } from 'meteor/accounts-base';
+// import route from '/imports/routing/router.js';
+// import Footer from '/imports/ui/Footer.jsx';
+// import  Navbar from '/imports/ui/Navbar.jsx';
+// l
+// export default class CreateAccount extends Component {
 
-    constructor(props){
-      super(props);
-      this.state = {
-        error :"",
-        error2 :"",
+//     constructor(props){
+//       super(props);
+//       this.state = {
+//         error :"",
+//         error2 :"",
 
-      }
-    }
+//       }
+//     }
   //   goToContacts = () => {
   //     route.go('/dashboard',{_id:this.state.name},{});
   // }
-    getUserData =(e) =>{
-      e.preventDefault();
-      const {target} = e;
-      const name = target.name.value;
-      const email = target.email.value;
-      const phone = target.phone.value;
-      const password = target.password.value;
-      const password2 = target.password2.value;
+  //   getUserData =(e) =>{
+  //     e.preventDefault();
+  //     const {target} = e;
+  //     const name = target.name.value;
+  //     const email = target.email.value;
+  //     const phone = target.phone.value;
+  //     const password = target.password.value;
+  //     const password2 = target.password2.value;
 
-     if(password.trim()!==password2.trim()){
-       this.setState({
-         error: "Passwords do not match"
-       })
-       return;
-     };
-     if(password.length <=6
-     ){
-       this.setState({
-         error2: "Password too short"
-       })
-       return;
-     }
-     const user = {
-       email,
-       password,
+  //    if(password.trim()!==password2.trim()){
+  //      this.setState({
+  //        error: "Passwords do not match"
+  //      })
+  //      return;
+  //    };
+  //    if(password.length <=6
+  //    ){
+  //      this.setState({
+  //        error2: "Password too short"
+  //      })
+  //      return;
+  //    }
+  //    const user = {
+  //      email,
+  //      password,
 
        profile: {
          name,

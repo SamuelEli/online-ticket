@@ -1,6 +1,8 @@
-import { Meteor } from 'meteor/meteor';
-import React,{Component} from 'react';
-import route from '/imports/routing/router.js';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import route from './router.js';
+import 'react-materialize';
+import { Row, Input } from 'react-materialize';
 
 
 
@@ -13,34 +15,35 @@ export default class Navbar extends Component{
   goToContact= ()=>{
 
   route.go("/ContactUs");
-}
-goToCreate= ()=>{
 
-route.go("/CreateAccount");
 }
 
+goToRoutes = () => {
+    route.go('/Routes')
+}
 
 
 
 
-
-  render(){
-    return(
-      <div>
-           <nav>
-            <div className="nav-wrapper">
-                <a href="#" className="brand-logo">Logo</a>
-                    <ul id="nav-mobile" className="right hide-on-med-and-down">
-                        <li><a href="Home">Home</a></li>
-                        <li><a href="CreateAccount">CreateAccount</a></li>
-
-                           <li><a href="ReserveForm">ReserveForm</a></li>
-                           <li><a href="ContactUs">ContactUs</a></li>
-                           {/* <li><a href="LogIn">LogIn</a></li> */}
-                    </ul>
-              </div>
-          </nav>
-      </div>
-    );
-  }
+export default class Navbar extends Component {
+    render() {
+        return(
+            <div>
+                <div>
+                    <nav>
+                        <div className="nav-wrapper">
+                            <div className="container">
+                                <h6><a href="" onClick={this.goToHome} className="brand-logo"> <span id="logo"> On|Bus Services </span> </a></h6>
+                                    <ul className="right hide-on-med-and-down">
+                                        <li> <a href="/" onClick={this.goToHome} >Home</a></li>
+                                        <li> <a href="" onClick={this.goToRoutes} id="button">Routes</a></li>
+                                        <li> <a href="" onClick={this.goToContactUs} className="waves-effect btn amber accent-4">Contact Us</a></li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        )
+    }
 }
