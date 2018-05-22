@@ -41,8 +41,8 @@ export default class Navbar extends Component {
 
         <li> <a href="/" onClick={this.goToHome}>Home</a></li>
         <li> <a href="" onClick={this.goToRoutes} id="button">Route</a></li>
-        <li><a  href="/Login"  onClick={this.props.goToVougar} className="waves-effect btn amber accent-4">SignIn</a></li>
-        <li> <a  href="/Createaccount"  onClick={this.goToCreateAccount} >SignUp</a></li>
+        {/* <li><a  href="/Login"  onClick={this.props.goToVougar} >SignIn /Login</a></li> */}
+        <li> <a  href="/Createaccount"  onClick={this.goToCreateAccount} className="waves-effect btn amber accent-4">SignUp /Login</a></li>
         
         </ul>
          </div>
