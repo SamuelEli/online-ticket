@@ -27,7 +27,7 @@ export default class Header extends Component {
                                 <div className="col s12 l8">
 
                                     {/* CARD TRY OUT */}
-                                
+
                                     <div className="card hoverable">
                                         <div className="card-image waves-effect waves-block waves-light">
                                             <img className="activator" src="images/black.svg" alt=""/>
@@ -40,7 +40,7 @@ export default class Header extends Component {
                                             <span className="card-title grey-text text-darken-4"><i className="material-icons right">close</i>Tell us where you want to go <i className="material-icons left"></i></span>
                                             <div>
                                                 <form action="">
-                                                    <div className="input-field"> 
+                                                    <div className="input-field">
                                                         <div className="white">
                                                             <Input s={12} type='select' defaultValue=''>
                                                                 <option value=''>From</option>
@@ -83,12 +83,12 @@ export default class Header extends Component {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('select');
-    var instances = M.FormSelect.init(elems, options);
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.timepicker');
-    var instances = M.Timepicker.init(elems, options);
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//     var elems = document.querySelectorAll('select');
+//     var instances = M.FormSelect.init(elems, options);
+// });
+//
+// document.addEventListener('DOMContentLoaded', function() {
+//     var elems = document.querySelectorAll('.timepicker');
+//     var instances = M.Timepicker.init(elems, options);
+// });
