@@ -13,7 +13,7 @@ export default  class RoutesForm extends Component{
           <Navbar/>
         </div>
         <div>
-      <Table className="foot">
+      <Table className="sarah">
         <thead>
           <tr>
             <th data-field="from">FROM</th>
