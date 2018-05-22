@@ -5,6 +5,7 @@ import App from '/imports/ui/App.jsx';
 
 export default createRouter(App);
 
+
 // // import React from 'react'
 // // import { FlowRouter } from 'meteor/kadira:flow-router'
 // // import { mount } from 'react-mounter'
