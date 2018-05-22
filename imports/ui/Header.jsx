@@ -4,6 +4,12 @@ import { Meteor } from 'meteor/meteor';
 import { Row, Input } from 'react-materialize';
 import route from '/imports/routing/router.js';
 
+goToReservationForm = () => {
+    route.go('/ReservationForm')
+}
+
+
+
 
 export default class Header extends Component {
     render() {
@@ -25,9 +31,6 @@ export default class Header extends Component {
                                     </p>
                                 </div>
                                 <div className="col s12 l8">
-
-                                    {/* CARD TRY OUT */}
-                                
                                     <div className="card hoverable">
                                         <div className="card-image waves-effect waves-block waves-light">
                                             <img className="activator" src="images/black.svg" alt=""/>
@@ -66,7 +69,7 @@ export default class Header extends Component {
                                                             </Input>
                                                             <Input s={12} name='on' type='date' onChange={function(e, value) {}} placeholder="Pick a Day" />
                                                             <Input s={12} name='on' type='time' onChange={function(e, value) {}} placeholder="Pick a Time" />
-                                                            <a href="#" className="waves-effect btn-large amber accent-4 left-align p2">Reserve Ticket</a>
+                                                            <a href="/ReservationForm" className="waves-effect btn-large amber accent-4 left-align p2" onClick={this.goToReservationForm}>Reserve Ticket</a>
                                                         </div>
                                                     </div>
                                                 </form>

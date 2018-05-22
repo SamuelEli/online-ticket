@@ -56,50 +56,47 @@ export default class CreateAccount extends Component {
      route.go('/');
     }
 
-    render(){
-      return(
+    render() {
+      return (
         
         <div>
           <Navbar CreateAccount={'active'}/>
-        <div>
-        <h4 id="Header"> Create Account</h4>
-          <div className="CreateAccount">
-          <div className="row justify-content-center">
-          <div className="col-md-4">
-          <div className="text-center">
-          </div>
-            <form onSubmit = {this.getUserData} className="needs-validation">
-                <div className="form-group">
-                    <input type="text" className="form-control" name="name" id="formGroupExampleInput" placeholder="Full name" required />
+          <div>
+            <h4 id="Header"> Create Account</h4>
+            <div className="CreateAccount">
+                <div className="row justify-content-center">
+                  <div className="col-md-4">
+                    <form onSubmit = {this.getUserData} className="needs-validation">
+                        <div className="form-group">
+                            <input type="text" className="form-control" name="name" id="formGroupExampleInput" placeholder="Full name" required />
+                        </div>
+                        <div className="form-group">
+                            <input type="email" className="form-control" name="email" id="formGroupExampleInput2" placeholder="Email Address" required/>
+                        </div>
+                        <div className="form-group">
+                            <input type="number" className="form-control" name="phone" id="formGroupExampleInput2" placeholder="Telephone" required/>
+                        </div>
+                        <div className="form-group">
+                            <input type="password"  className="form-control" name="password" id="formGroupExampleInput2" placeholder="Password"  required/>
+                            <p style={{color:"red"}}>{this.state.error2}</p>
+                        </div>
+                        <div className="form-group">
+                            <input type="password" className="form-control" name="password2" id="formGroupExampleInput2" placeholder="Confirm password"required/>
+                            <p style={{color:"red"}}>{this.state.error}</p>
+                        </div>
+                        <div className="text-center">
+                          <input type="submit" value="CreateAccount" id="submitbtn"/>
+                        </div>
+                    </form>
+                    <br/>
+                    <div className="text-center">
+                        <p>Sign up Now! / Login if You are already a member ;)</p>
+                    </div>
                 </div>
-                <div className="form-group">
-                    <input type="email" className="form-control" name="email" id="formGroupExampleInput2" placeholder="Email Address" required/>
-                </div>
-                <div className="form-group">
-                    <input type="number" className="form-control" name="phone" id="formGroupExampleInput2" placeholder="Telephone" required/>
-                </div>
-                <div className="form-group">
-                    <input type="password"  className="form-control" name="password" id="formGroupExampleInput2" placeholder="Password"  required/>
-                    <p style={{color:"red"}}>{this.state.error2}</p>
-                </div>
-                <div className="form-group">
-                    <input type="password" className="form-control" name="password2" id="formGroupExampleInput2" placeholder="Confirm password"required/>
-                    <p style={{color:"red"}}>{this.state.error}</p>
-                </div>
-               
-                <div className="text-center">
-                <input type="submit" value="CreateAccount" id="submitbtn"/>
-                </div>
-            </form><br/>
-            <div className="text-center">
-                <p>Sign up Now! / Login if You are already a member ;)</p>
+              </div>
             </div>
-        </div>
-        </div>
-          
-      </div>
-      <Footer/> 
-        </div>
+            <Footer/> 
+          </div>
         </div>
       )
     }
