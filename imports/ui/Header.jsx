@@ -66,7 +66,7 @@ export default class Header extends Component {
                                                             </Input>
                                                             <Input s={12} type="date" className="datepicker" placeholder="Pick a Day"/>
                                                             <Input s={12} type="time" className="timepicker" placeholder="Pick a Time"/>
-                                                            <a href="#" className="waves-effect btn-large amber accent-4 left-align p2">Search</a>
+                                                            <a href="#" className="waves-effect btn-large amber accent-4 left-align p2">Reserve Ticket</a>
                                                         </div>
                                                     </div>
                                                 </form>

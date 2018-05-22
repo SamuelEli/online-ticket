@@ -1,5 +1,6 @@
 /* NEW STYLES */
 
+
 * {
   margin: 0;
   padding: 0;
@@ -71,6 +72,7 @@ Input::placeholder {
   color: #00b890;
   font-size: 1.1rem;
 }
+
 
 #button {
   border: 2px solid #ffffff;

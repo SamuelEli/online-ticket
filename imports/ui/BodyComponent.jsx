@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Meteor } from 'meteor/meteor';
+import 'react-materialize';
 import { Row, Input } from 'react-materialize';
 import route from '/imports/routing/router.js';
 
@@ -46,7 +47,7 @@ export default class Home extends Component {
                                             <div className="right-alight">
                                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti laborum voluptate commodi asperiores! Exercitationem, sapiente consequuntur nobis, fugit praesentium inventore eveniet tempora blanditiis qui quis minus suscipit cum eius reiciendis.</p>
                                             </div>
-                                        </div>   
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -70,11 +71,8 @@ export default class Home extends Component {
                             </div>
                         </div>
                     </div>
-                </div>             
+                </div>
             </div>
         )
     }
 }
-
-
-
