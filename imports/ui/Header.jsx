@@ -82,13 +82,3 @@ export default class Header extends Component {
         )
     }
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('select');
-    // var instances = M.FormSelect.init(elems, options);
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.timepicker');
-    // var instances = M.Timepicker.init(elems, options);
-});

@@ -1,5 +1,6 @@
 /* NEW STYLES */
 
+
 * {
   margin: 0;
   padding: 0;
@@ -71,6 +72,7 @@ Input::placeholder {
   color: #00b890;
   font-size: 1.1rem;
 }
+
 
 #button {
   border: 2px solid #ffffff;
@@ -161,3 +163,65 @@ color: #979899;
 .new {
   padding: 2.9rem 0;
 }
+
+.PopHeader {
+  background-color: #112D30;
+  color: white;
+  text-align: center;
+  margin-bottom: 3%;
+ background-position: 100% 100%;
+ background-repeat: no-repeat;
+
+}
+
+/* SignUp */
+#Header{
+  color: white;
+  margin-bottom: 4%;
+  text-align: center;
+  background-color: orange;
+  margin-top: 0%;
+  padding-bottom: 2%
+}
+
+.CreateAccount{
+  width: 40%;
+  margin-left: 28%;
+  }
+
+#submitbtn{
+  border: 0;
+  background: #00b891;
+  padding: .5rem;
+  color: white;
+  margin: 0rem 0;
+  width: auto;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .7s background ease;
+}
+
+#submitbtn:hover{
+  background: orange;
+}
+
+/* SignIn */
+#loginHeader{
+  color: white;
+  margin-bottom: 4%;
+  text-align: center;
+  background-color: orange;
+  margin-top: 0%;
+  padding-bottom: 2%
+}
+
+.field{
+  width: 40%;
+  margin-left: 28%;
+  }
+
+  /* footer */
+
+  .footer-copyright{
+    margin-bottom: 0%;
+  }

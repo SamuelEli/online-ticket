@@ -47,7 +47,7 @@ export default class Home extends Component {
                                             <div className="right-alight">
                                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti laborum voluptate commodi asperiores! Exercitationem, sapiente consequuntur nobis, fugit praesentium inventore eveniet tempora blanditiis qui quis minus suscipit cum eius reiciendis.</p>
                                             </div>
-                                        </div>   
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -71,11 +71,8 @@ export default class Home extends Component {
                             </div>
                         </div>
                     </div>
-                </div>             
+                </div>
             </div>
         )
     }
 }
-
-
-
