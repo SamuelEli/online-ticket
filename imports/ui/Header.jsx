@@ -64,8 +64,8 @@ export default class Header extends Component {
                                                                 <option value='7'>Mansa</option>
                                                                 <option value='8'>Mongu</option>
                                                             </Input>
-                                                            <Input s={12} type="date" className="datepicker" placeholder="Pick a Day"/>
-                                                            <Input s={12} type="time" className="timepicker" placeholder="Pick a Time"/>
+                                                            <Input s={12} name='on' type='date' onChange={function(e, value) {}} placeholder="Pick a Day" />
+                                                            <Input s={12} name='on' type='time' onChange={function(e, value) {}} placeholder="Pick a Time" />
                                                             <a href="#" className="waves-effect btn-large amber accent-4 left-align p2">Reserve Ticket</a>
                                                         </div>
                                                     </div>
@@ -85,10 +85,10 @@ export default class Header extends Component {
 
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('select');
-    var instances = M.FormSelect.init(elems, options);
+    // var instances = M.FormSelect.init(elems, options);
 });
 
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.timepicker');
-    var instances = M.Timepicker.init(elems, options);
+    // var instances = M.Timepicker.init(elems, options);
 });

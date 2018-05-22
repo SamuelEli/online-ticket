@@ -1,5 +1,6 @@
 import route from './router.js';
 import HomePage from '/imports/ui/HomePage.jsx';
+import ReservationForm from '/imports/ui/ReservationForm';
 
 // import Home from '/imports/ui/Home.jsx';
 // import ContactUs from '/imports/ui/ContactUs.jsx';
@@ -13,6 +14,7 @@ import HomePage from '/imports/ui/HomePage.jsx';
 
 
 route('/', HomePage);
+route('/ReservationForm', ReservationForm)
 // route('/ContactUs',ContactUs);
 // route('/CreateAccount',CreateAccount);
 // route('/ReserveForm',ReserveForm);

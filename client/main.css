@@ -132,6 +132,15 @@ a {
   font-size: 1.1rem;
 }
 
+.heading {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.background-page {
+  background-color: #dfe7e6;
+}
+
 
 .page-footer {
 padding-top: 20px;
