@@ -162,3 +162,55 @@ color: #979899;
  background-repeat: no-repeat;
 
 }
+
+/* SignUp */
+#Header{
+  color: white;
+  margin-bottom: 4%;
+  text-align: center;
+  background-color: orange;
+  margin-top: 0%;
+  padding-bottom: 2%
+}
+
+.CreateAccount{
+  width: 40%;
+  margin-left: 28%;
+  }
+
+#submitbtn{
+  border: 0;
+  background: #00b891;
+  padding: .5rem;
+  color: white;
+  margin: 0rem 0;
+  width: auto;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .7s background ease;
+}
+
+#submitbtn:hover{
+  background: orange;
+}
+
+/* SignIn */
+#loginHeader{
+  color: white;
+  margin-bottom: 4%;
+  text-align: center;
+  background-color: orange;
+  margin-top: 0%;
+  padding-bottom: 2%
+}
+
+.field{
+  width: 40%;
+  margin-left: 28%;
+  }
+
+  /* footer */
+
+  .footer-copyright{
+    margin-bottom: 0%;
+  }

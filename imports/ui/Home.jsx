@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Row, Input } from 'react-materialize';
-import ReservationForm from '/imports/ui/ReservationForm';
+// import ReservationForm from '/imports/ui/ReservationForm';
 import ContactUs from './ContactUs';
 
 
