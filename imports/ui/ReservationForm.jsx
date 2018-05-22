@@ -13,7 +13,6 @@ export default class ReservationForm extends Component {
                     <Navbar/>
                     <br/>
                     <br/>
-
                     <div className="backgroud-page">
                         <div className="container">
                             <div className="">

@@ -21,37 +21,36 @@ export default class Login extends Component{
       })
     }
    
-      render(){
-          return(
-              <div>
-
-            <Navbar CreateAccount={'active'}/>
-          <h4 id="loginHeader">SignIn</h4>
-          <div className="field">
-         <form className="col s12" onSubmit = {this.logUserIn}>
-         
-          <div className="row">
-           <div className=" col">
-           </div>
-            <div className="input-field">
-              <input name="email" type="email" className="validate"/>
-               <label type="email">Email</label>
+      render() {
+          return (
+            <div>
+              <Navbar CreateAccount={'active'}/>
+              <h4 id="loginHeader">SignIn</h4>
+              <div className="field">
+                <form className="col s12" onSubmit = {this.logUserIn}>
+                
+                  <div className="row">
+                    <div className=" col">
+                    </div>
+                      <div className="input-field">
+                        <input name="email" type="email" className="validate"/>
+                        <label type="email">Email</label>
+                      </div>
+                    </div>
+                  <div className="row">
+                  <div className=" col s4">
+                  </div>
+                    <div className="input-field ">
+                      <input name="password" type="password" className="validate"/>
+                      <label type="password">Password</label>
+                    </div>
+                  </div>
+                  <button type="Primary" className="btn btn-primary waves-effect waves-light center"id="login-button">
+                  SignIn
+                  </button>
+                </form>              
+              </div>
             </div>
-          </div>
-          <div className="row">
-           <div className=" col s4">
-           </div>
-            <div className="input-field ">
-              <input name="password" type="password" className="validate"/>
-               <label type="password">Password</label>
-            </div>
-          </div>
-          <button type="Primary" className="btn btn-primary waves-effect waves-light center"id="login-button">
-          SignIn
-          </button>
-         </form>              
-       </div>
-      </div>
       
           )
       }
