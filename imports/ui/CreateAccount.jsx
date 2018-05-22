@@ -4,20 +4,31 @@ import { Accounts } from 'meteor/accounts-base';
 import route from '/imports/routing/router.js';
 import Footer from './Footer';
 import  Navbar from '/imports/ui/Navbar.jsx';
+import LogIn from '/imports/ui/LogIn.jsx';
 
 export default class CreateAccount extends Component {
-
-    constructor(props){
-      super(props);
-      this.state = {
-        error :"",
-        error2 :"",
-
+  constructor(props){
+    super(props);
+    this.state = {
+       error :"",
+       error2 :"",
       }
     }
+    
+    // popupLog
+      componentDidMount(){
+        $(document).ready(function(){
+          $('.modal').modal();
+        });
+            
+      }
+
+
+
     goToContacts = () => {
       route.go('/dashboard',{_id:this.state.name},{});
-  }
+    }
+    
     getUserData =(e) =>{
       e.preventDefault();
       const {target} = e;
@@ -26,46 +37,66 @@ export default class CreateAccount extends Component {
       const phone = target.phone.value;
       const password = target.password.value;
       const password2 = target.password2.value;
-
-     if(password.trim()!==password2.trim()){
-       this.setState({
-         error: "Passwords do not match"
-       })
-       return;
-     };
-     if(password.length <=6
-     ){
-       this.setState({
-         error2: "Password too short"
-       })
-       return;
-     }
-     const user = {
-       email,
-       password,
-
-       profile: {
-         name,
-         phone,
-       },
-       createdAt: new Date()
-     }
-     Accounts.createUser(user,error=>{
-       error ? console.log(error.reason) : console.log("Account Created Successfully")
-     }) ;
+      
+      if(password.trim()!==password2.trim()){
+        this.setState({
+          error: "Passwords do not match"
+        })
+        return;
+      };
+      
+      if(password.length <=6
+      ){
+        this.setState({
+          error2: "Password too short"
+        })
+        return;
+      }
+      const user = {
+        email,
+        password,
+        profile: {
+          name,
+          phone,
+        },
+        createdAt: new Date()
+      }
+      
+      Accounts.createUser(user,error=>{
+        error ? console.log(error.reason) : console.log("Account Created Successfully")
+      }) ;
      route.go('/');
     }
 
-    render(){
+    renderLogin(){
       return(
-        
-        <div>
+
+      // loginForm
+  <div id="modal1" className="modal">
+    <div class="modal-content">
+    <LogIn/>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat"></a>
+    </div>
+    </div>
+      )
+    }
+    
+    render() {
+      return(
+      <div>
           <Navbar CreateAccount={'active'}/>
-        <div>
-        <h4 id="Header"> Create Account</h4>
-          <div className="CreateAccount">
-          <div className="row justify-content-center">
-          <div className="col-md-4">
+          {this.renderLogin()}
+        <div><br/>
+            <div className="Container">
+             <div id="AccountTitle">
+         <a className="waves-effect waves-light btn modal-trigger" href="#modal1">LogIn</a>
+             
+                </div>
+                <div className="CreateAccount">
+              <div className="row justify-content-center">
+               <div className="col-md-4">
           <div className="text-center">
           </div>
             <form onSubmit = {this.getUserData} className="needs-validation">
@@ -91,16 +122,18 @@ export default class CreateAccount extends Component {
                 <input type="submit" value="CreateAccount" id="submitbtn"/>
                 </div>
             </form><br/>
-            <div className="text-center">
-                <p>Sign up Now! / Login if You are already a member ;)</p>
-            </div>
+            
         </div>
         </div>
           
       </div>
+
+        </div>
       <Footer/> 
         </div>
         </div>
       )
     }
   }
+
+  

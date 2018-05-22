@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import  Meteor  from 'meteor/meteor';
 import { Accounts } from 'meteor/accounts-password';
 import route from '/imports/routing/router.js';
-import Navbar  from '/imports/ui/Navbar.jsx';
+
 
 export default class Login extends Component{
     constructor(props){
@@ -23,10 +23,9 @@ export default class Login extends Component{
    
       render(){
           return(
-              <div>
-
-            <Navbar CreateAccount={'active'}/>
-          <h4 id="loginHeader">SignIn</h4>
+            
+            <div className="container">
+            <div className="field">
           <div className="field">
          <form className="col s12" onSubmit = {this.logUserIn}>
          
@@ -46,12 +45,14 @@ export default class Login extends Component{
                <label type="password">Password</label>
             </div>
           </div>
-          <button type="Primary" className="btn btn-primary waves-effect waves-light center"id="login-button">
+          <button type="Primary" className="btn btn-primary waves-effect waves-light center" id="SignIn-button">
           SignIn
           </button>
          </form>              
        </div>
       </div>
+      </div>
+
       
           )
       }

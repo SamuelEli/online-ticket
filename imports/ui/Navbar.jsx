@@ -26,7 +26,7 @@ gotToCreateAccount = () => {
 }
 
 goToLogin = () => {
-    route.go('/Login')
+    route.go('/LogIn')
 }
 
 export default class Navbar extends Component {
