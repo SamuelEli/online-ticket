@@ -29,26 +29,30 @@ goToLogin = () => {
     route.go('/LogIn')
 }
 
+goToRoutes = () => {
+    route.go('/Routes')
+}
+
 export default class Navbar extends Component {
     render() {
         return(
-    <div>
-       <div>
-       <nav>
-         <div className="nav-wrapper"><div className="container"><h6>
-          <a href="/" className="brand-logo" onClick={this.goToHome}> <span id="logo"> On|Bus Services </span> </a></h6>
-           <ul className="right hide-on-med-and-down">
-
-        <li> <a href="/" onClick={this.goToHome}>Home</a></li>
-        <li> <a href="" onClick={this.goToRoutes} id="button">Route</a></li>
-        {/* <li><a  href="/Login"  onClick={this.props.goToVougar} >SignIn /Login</a></li> */}
-        <li> <a  href="/Createaccount"  onClick={this.goToCreateAccount} className="waves-effect btn amber accent-4">SignUp /Login</a></li>
-        
-        </ul>
-         </div>
-          </div>
-            </nav>
-            </div>
+            <div>
+                <div>
+                    <nav>
+                        <div className="nav-wrapper">
+                            <div className="container">
+                                <h6>
+                                    <a href="/" className="brand-logo" onClick={this.goToHome}> <span id="logo"> On|Bus Services </span> </a>
+                                </h6>
+                                <ul className="right hide-on-med-and-down">
+                                    <li> <a href="/" onClick={this.goToHome}>Home</a></li>
+                                    <li> <a href="/Routes" onClick={this.goToRoutes} id="button">Route</a></li>
+                                    <li> <a  href="/CreateAccount"  onClick={this.goToCreateAccount} className="waves-effect btn amber accent-4">SignUp/Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
             </div>
         )
     }

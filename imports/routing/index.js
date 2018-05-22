@@ -3,12 +3,12 @@ import HomePage from '/imports/ui/HomePage.jsx';
 import ReservationForm from '/imports/ui/ReservationForm';
 import CreateAccount from '/imports/ui/CreateAccount.jsx';
 import Login from '/imports/ui/LogIn.jsx'
+import RoutesComponent from '/imports/ui/RoutesComponent.jsx';
 
-route ('/Createaccount', CreateAccount);
+
+
+route ('/CreateAccount', CreateAccount);
 route ('/Login', Login);
 route('/', HomePage);
 route('/ReservationForm', ReservationForm)
-// route('/ContactUs',ContactUs);
-// route('/CreateAccount',CreateAccount);
-// route('/ReserveForm',ReserveForm);
-// route('/LogIn',LogIn);
+route('/Routes',RoutesComponent);

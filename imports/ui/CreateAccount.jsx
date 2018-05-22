@@ -82,7 +82,6 @@ export default class CreateAccount extends Component {
     </div>
       )
     }
-    
     render() {
       return(
       <div>
@@ -91,7 +90,7 @@ export default class CreateAccount extends Component {
         <div><br/>
             <div className="Container">
              <div id="AccountTitle">
-         <a className="waves-effect waves-light btn modal-trigger" href="#modal1">LogIn</a>
+         <a className="waves-effect waves-light btn modal-trigger" href="#modal1">Login</a>
              
                 </div>
                 <div className="CreateAccount">
