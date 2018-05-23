@@ -8,7 +8,6 @@ import RoutesForm2 from '/imports/ui/RoutesComponent2.jsx';
 
 
 route ('/CreateAccount', CreateAccount);
-route ('/Login', Login);
 route('/', HomePage);
 route('/ReservationForm', ReservationForm)
 route('/Routes',Routes);

@@ -1,6 +1,4 @@
 /* NEW STYLES */
-
-
 * {
   margin: 0;
   padding: 0;
@@ -175,15 +173,6 @@ color: #979899;
 }
 
 /* SignUp */
-#Header{
-  color: white;
-  margin-bottom: 4%;
-  text-align: center;
-  background-color: orange;
-  margin-top: 0%;
-  padding-bottom: 2%
-}
-
 .CreateAccount{
   width: 40%;
   margin-left: 28%;
@@ -205,25 +194,15 @@ color: #979899;
 }
 
 /* SignIn */
-#loginHeader{
-  color: white;
-  margin-bottom: 4%;
-  text-align: center;
-  background-color: orange;
-  margin-top: 0%;
-  padding-bottom: 2%
-}
-
 .field{
-  width: 40%;
-  margin-left: 28%;
+  width: 100%;
+  padding-left: 0%;
   }
-
-  /* footer */
 
   .footer-copyright{
     margin-bottom: 0%;
   }
+
 
    /*RoutesForms sarah*/
   h1{
@@ -260,7 +239,17 @@ color: #979899;
      padding-top: 12px;
      padding-bottom: 12px;
      text-align: center;
-     /*text-align: left;*/
      background-color:#4ABF87;
      color: black;
+}
+
+
+#LoginButton{
+  background-color: white;
+  color: orange;
+}
+
+
+#LoginButton:hover{
+  color: green;
 }

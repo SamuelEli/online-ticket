@@ -1,3 +1,4 @@
+// Samuel Eli
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import 'react-materialize';
@@ -13,10 +14,6 @@ goToRoutes = () => {
     route.go('/Routes')
 }
 
-goToContactUs = () => {
-    route.go('/ContactUs')
-}
-
 goToReservationForm = () => {
     route.go('/ReservationForm')
 }
@@ -25,9 +22,6 @@ gotToCreateAccount = () => {
     route.go('/CreateAccount')
 }
 
-goToLogin = () => {
-    route.go('/Login')
-}
 
 goToRoutes = () => {
     route.go('/Routes')
