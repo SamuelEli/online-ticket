@@ -172,7 +172,7 @@ color: #979899;
 
 }
 
-/* SignUp */
+/* Samuel SignUp */
 .CreateAccount{
   width: 40%;
   margin-left: 28%;
@@ -206,8 +206,15 @@ color: #979899;
   #LoginButton{
     background-color: white;
     color: orange;
+    margin-left: 1%;
+    font-style: italic;
   }
 
 #LoginButton:hover{
   color: green;
+}
+
+.btnpara{
+  margin-left: 28%;
+  font-style: italic;
 }

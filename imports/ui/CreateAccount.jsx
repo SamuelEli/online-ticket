@@ -1,3 +1,4 @@
+// Samuel
 import React,{Component} from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Accounts } from 'meteor/accounts-base';
@@ -5,6 +6,7 @@ import route from '/imports/routing/router.js';
 import Footer from './Footer';
 import  Navbar from '/imports/ui/Navbar.jsx';
 import LogIn from '/imports/ui/LogIn.jsx';
+import {Row, Icon, Input} from 'react-materialize';
 
 export default class CreateAccount extends Component {
   constructor(props){
@@ -77,67 +79,70 @@ export default class CreateAccount extends Component {
     <LogIn/>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat"></a>
     </div>
     </div>
       )
     }
     render() {
       return(
-      <div>
+        <div>
           <Navbar CreateAccount={'active'}/>
           {this.renderLogin()}
-        <div><br/>
-            <div className="Container">
-             <div id="AccountTitle">
-         
-             
-                </div>
-                <div className="CreateAccount">
-              <div className="row justify-content-center">
-               <div className="col-md-4">
-          <div className="text-center">
-          </div>
-            <form onSubmit = {this.getUserData} className="needs-validation">
-                <div className="form-group">
-                    <input type="text" className="form-control" name="name" id="formGroupExampleInput" placeholder="Full name" required />
-                </div>
-
-                <div className="form-group">
-                    <input type="email" className="form-control" name="email" id="formGroupExampleInput2" placeholder="Email Address" required/>
-                </div>
-
-                <div className="form-group">
-                    <input type="number" className="form-control" name="phone" id="formGroupExampleInput2" placeholder="Telephone" required/>
-                </div>
-
-                <div className="form-group">
-                    <input type="password"  className="form-control" name="password" id="formGroupExampleInput2" placeholder="Password"required/>
-                    <p style={{color:"red"}}>{this.state.error2}</p>
-                </div>
-
-                <div className="form-group">
-                    <input type="password" className="form-control" name="password2" id="formGroupExampleInput2" placeholder="Confirm password"required/>
-                    <p style={{color:"red"}}>{this.state.error}</p>
-                </div>
-               
-                <div className="text-center">
-                <input type="submit" value="CreateAccount" id="submitbtn"/>
-                </div>
-            </form>
+          <div>
             <br/>
-            <p> Already have an account?<a className="waves-effect waves-light btn modal-trigger" href="#modal1" id="LoginButton">Login</a></p>
-        </div>
-        </div>
-          
-      </div>
+            <div className="Container">
+            <p className="btnpara"> Already have an account? <a href="#modal1" id="LoginButton">Log In here</a></p>
+              <div className="CreateAccount">
+                <div className="row justify-content-center">
+                  <div className="col-md-4">
+                    <form onSubmit = {this.getUserData} className="needs-validation">
+                        <div className="input-field">
+                          <i className="material-icons prefix">account_circle</i>
+                          <input type="text" className="form-control" name="name" label="Full name" required />
+                          <label for="icon_prefix">Full name</label>
+                        </div>
 
-        </div>
-      <Footer/> 
-        </div>
+                        <div className="input-field">
+                        <i className="material-icons prefix">email</i>
+                            <input type="email" className="form-control" name="email" label="Email Address" required/>
+                            <label for="icon_prefix">email</label>
+                        </div>
+                        <br/>
+
+                        <div className="input-field">
+                        <i className="material-icons prefix">phone</i>
+                            <input type="number" className="form-control" name="phone" label="Telephone" required/>
+                            <label for="icon_prefix">Telephone</label>
+                        </div>
+                        <br/>
+
+                        <div className="input-field">
+                        <i className="material-icons prefix">visibility</i>
+                            <input type="password"  className="form-control" name="password"  label="Password" required/>
+                            <p style={{color:"red"}}>{this.state.error2}</p>
+                            <label for="icon_prefix">Password</label>
+                        </div>
+                        <br/>
+
+                        <div className="input-field">
+                        <i className="material-icons prefix">visibility</i>
+                            <input type="password" className="form-control" name="password2" label="Confirm password" required/>
+                            <p style={{color:"red"}}>{this.state.error}</p>
+                            <label for="icon_prefix">Confirm password</label>
+                        </div>
+                        <br/>
+                      
+                        <div className="text-center">
+                          <input type="submit" value="CreateAccount" id="submitbtn"/>
+                        </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <Footer/> 
+          </div>
         </div>
       )
     }
   }
-
-  
