@@ -5,6 +5,18 @@ import Footer from '/imports/ui/Footer.jsx';
 import { Row, Input } from 'react-materialize';
 
 export default class ReservationForm extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            firstName: '',
+            lastName: '',
+            email: '',
+            phoneNumber: '',
+            idNumber: '',
+            group1: '',
+            group2: '',
+        }
+    }
     render() {
         return(
             <div>
@@ -21,27 +33,27 @@ export default class ReservationForm extends Component {
                                     <form action="">
                                         <div className="input-field">
                                             <i className="material-icons prefix">account_circle</i>
-                                            <input id="icon_prefix" type="text" className="validate"/>
+                                            <input id="icon_prefix" name="firstName" type="text" className="validate"/>
                                             <label for="icon_prefix">FIRST NAME</label>
                                         </div>
                                         <div className="input-field">
                                             <i className="material-icons prefix">account_circle</i>
-                                            <input id="icon_prefix" type="text" className="validate"/>
+                                            <input id="icon_prefix" name="lastName" type="text" className="validate"/>
                                             <label for="icon_prefix">LAST NAME</label>
                                         </div>
                                         <div className="input-field">
                                             <i className="material-icons prefix">email</i>
-                                            <input id="icon_prefix" type="email" className="validate"/>
+                                            <input id="icon_prefix" name="email" type="email" className="validate"/>
                                             <label for="icon_prefix">EMAIL</label>
                                         </div>
                                         <div className="input-field">
                                             <i className="material-icons prefix">phone</i>
-                                            <input id="icon_prefix" type="tel" className="validate"/>
+                                            <input id="icon_prefix" name="phoneNumber" type="tel" className="validate"/>
                                             <label for="icon_prefix">PHONE NUMBER</label>
                                         </div>
                                         <div className="input-field">
                                             <i className="material-icons prefix">picture_in_picture</i>
-                                            <input id="icon_prefix" type="tel" className="validate"/>
+                                            <input id="icon_prefix" name="idNumber" type="tel" className="validate"/>
                                             <label for="icon_prefix">ID NUMBER</label>
                                         </div>
 
@@ -55,7 +67,7 @@ export default class ReservationForm extends Component {
                                             <Input name='group1' type='radio' value='other' label='Other' className='with-gap' />
                                         </Row>
                                         <Row>
-                                            <Input name='group1' type='checkbox' value='' label='DO YOU ACCEPT OUR TERMS AND CONDITIONS?' />
+                                            <Input name='group2' type='checkbox' value='' label='DO YOU ACCEPT OUR TERMS AND CONDITIONS?' />
                                         </Row>
                                         <p>
                                             <a href="#" className="waves-effect btn amber accent-4">SUBMIT</a>
