@@ -1,3 +1,4 @@
+// Samuel Eli
 import React,{Component} from 'react';
 import  Meteor  from 'meteor/meteor';
 import { Accounts } from 'meteor/accounts-password';
@@ -45,9 +46,7 @@ export default class Login extends Component{
                <label type="password">Password</label>
             </div>
           </div>
-          <button type="Primary" className="btn btn-primary waves-effect waves-light center" id="SignIn-button">
-          SignIn
-          </button>
+        <a type="submit" className="waves-effect waves-light btn modal-trigger" href="#LogIn" id="LoginButton"> LogIn</a>
          </form>              
        </div>
       </div>

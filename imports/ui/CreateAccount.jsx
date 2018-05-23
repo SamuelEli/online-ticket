@@ -90,7 +90,7 @@ export default class CreateAccount extends Component {
         <div><br/>
             <div className="Container">
              <div id="AccountTitle">
-         <a className="waves-effect waves-light btn modal-trigger" href="#modal1">Login</a>
+         
              
                 </div>
                 <div className="CreateAccount">
@@ -102,16 +102,20 @@ export default class CreateAccount extends Component {
                 <div className="form-group">
                     <input type="text" className="form-control" name="name" id="formGroupExampleInput" placeholder="Full name" required />
                 </div>
+
                 <div className="form-group">
                     <input type="email" className="form-control" name="email" id="formGroupExampleInput2" placeholder="Email Address" required/>
                 </div>
+
                 <div className="form-group">
                     <input type="number" className="form-control" name="phone" id="formGroupExampleInput2" placeholder="Telephone" required/>
                 </div>
+
                 <div className="form-group">
-                    <input type="password"  className="form-control" name="password" id="formGroupExampleInput2" placeholder="Password"  required/>
+                    <input type="password"  className="form-control" name="password" id="formGroupExampleInput2" placeholder="Password"required/>
                     <p style={{color:"red"}}>{this.state.error2}</p>
                 </div>
+
                 <div className="form-group">
                     <input type="password" className="form-control" name="password2" id="formGroupExampleInput2" placeholder="Confirm password"required/>
                     <p style={{color:"red"}}>{this.state.error}</p>
@@ -120,8 +124,9 @@ export default class CreateAccount extends Component {
                 <div className="text-center">
                 <input type="submit" value="CreateAccount" id="submitbtn"/>
                 </div>
-            </form><br/>
-            
+            </form>
+            <br/>
+            <p> Already have an account?<a className="waves-effect waves-light btn modal-trigger" href="#modal1" id="LoginButton">Login</a></p>
         </div>
         </div>
           
