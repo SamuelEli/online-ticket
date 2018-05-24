@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Navbar from '/imports/ui/Navbar';
 import Footer from '/imports/ui/Footer.jsx';
 import { Row, Input, Table } from 'react-materialize';
+import RoutesForm2 from '/imports/ui/RoutesComponent2.jsx';
 
 
 export default  class RoutesForm extends Component{
@@ -12,8 +13,14 @@ export default  class RoutesForm extends Component{
         <div>
           <Navbar/>
         </div>
-        <br/>
-          <h1>local fares table</h1>
+        {/* <br/> */}
+          <h3>local fares table</h3>
+          <h5> For international fares and Departures?
+            <a
+              href="/RoutesForm2"
+              id="RoutesForm2">RoutesForm2</a></h5>
+
+              {/* <RoutesForm2/> */}
         <div>
       <Table className="sarah">
         <thead>
@@ -56,21 +63,21 @@ export default  class RoutesForm extends Component{
             <td>SOLWEZI</td>
             <td>LUANGWA</td>
             <td>8.00hours</td>
-            <td>k150</td>
+            <td>K150</td>
           </tr>
 
           <tr>
             <td>CHINGOLA</td>
             <td>MANSA</td>
             <td>09.00hours</td>
-            <td>k100</td>
+            <td>K100</td>
           </tr>
 
           <tr>
             <td>MPIKA</td>
             <td>CHOMA</td>
             <td>15:00hours</td>
-            <td>k50</td>
+            <td>K50</td>
 
           </tr>
 
@@ -78,7 +85,7 @@ export default  class RoutesForm extends Component{
             <td>SIAVONGA</td>
             <td>MONGO</td>
             <td>12:00hours</td>
-            <td>k120</td>
+            <td>K120</td>
           </tr>
 
 
@@ -86,7 +93,7 @@ export default  class RoutesForm extends Component{
             <td>KAFUE</td>
             <td>CHILLIABOMBWE</td>
             <td>10:00hours</td>
-            <td>k60</td>
+            <td>K60</td>
           </tr>
 
           <tr>

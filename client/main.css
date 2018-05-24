@@ -204,13 +204,13 @@ color: #979899;
   }
 
 
-   /*RoutesForms sarah*/
-  h1{
+   /*RoutesForms*/
+  h3{
     font-size: 30px;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     color: orange;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 500;
     text-align: center;
     margin-bottom: 5px;
 }
@@ -218,31 +218,63 @@ color: #979899;
    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
    border-collapse: collapse;
    width: 100%;
+
 }
 
 .sarah td, .sarah th {
     border: 2px solid #ddd;
-    padding: 12px;
+    padding: 6px;
+    /*text-align: center;*/
+    overflow-x:auto;
 }
 
 
-  .sarah tr:hover {
+  .sarah tr:hover{
     background-color: #ddd;
-
   }
+
+  .sarah tr{
+    text-align: center;
+  }
+
   .sarah tr:nth-child(even){
     background-color: #f2f2f2;
+
   }
 
 
-.sarah th{
-     padding-top: 12px;
-     padding-bottom: 12px;
-     text-align: center;
-     background-color:#4ABF87;
-     color: black;
+  .sarah th{
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color:#4ABF87;
 }
 
+
+
+/*.sarah th{
+     padding-top: 12px;
+     padding-bottom: 12px;
+     text-align:center;
+     background-color:#4ABF87;
+     color: black;
+}*/
+
+
+
+#RoutesForm2:hover{
+  color: #3088FF;
+  background-color: white;
+}
+
+
+#Routes:hover{
+  color: #3088FF;
+  background-color: white;
+}
 
 #LoginButton{
   background-color: white;

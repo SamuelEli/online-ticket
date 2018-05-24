@@ -3,17 +3,22 @@ import ReactDOM from 'react-dom';
 import Navbar from '/imports/ui/Navbar';
 import Footer from '/imports/ui/Footer.jsx';
 import { Row, Input, Table } from 'react-materialize';
+import Routes from '/imports/ui/RoutesComponent.jsx';
 
 
-export default  class RoutesComponent2 extends Component{
+export default  class RoutesForm2 extends Component{
   render(){
     return(
       <div>
         <div>
           <Navbar/>
         </div>
-        <br/>
-        <h1>international fares table</h1>
+
+        <h3>international fares table</h3>
+
+        <a
+          href="/Routes"
+          id="Routes"><h5>Routes</h5></a>
 
         <div>
       <Table className="sarah">
@@ -31,14 +36,14 @@ export default  class RoutesComponent2 extends Component{
             <td>LUSAKA</td>
             <td>MALAWI</td>
             <td>04:30hours</td>
-            <td>K85</td>
+            <td>K185</td>
           </tr>
 
           <tr>
             <td>LIVINGSTONE</td>
             <td>ZIMBABWE</td>
             <td>04:00hours</td>
-            <td>K70</td>
+            <td>K170</td>
           </tr>
           <tr>
             <td>DRC</td>
@@ -50,28 +55,28 @@ export default  class RoutesComponent2 extends Component{
             <td>LIVINGSTONE</td>
             <td>NAMIBIA</td>
             <td>16.00hours</td>
-            <td>K70</td>
+            <td>K1270</td>
           </tr>
 
           <tr>
             <td>ANGOLAs</td>
             <td>SOLWEZI</td>
             <td>8.00hours</td>
-            <td>k150</td>
+            <td>K150</td>
           </tr>
 
           <tr>
             <td>TANZANIA</td>
             <td>MANSA</td>
             <td>09.00hours</td>
-            <td>k100</td>
+            <td>K100</td>
           </tr>
 
           <tr>
             <td>CHOMA</td>
             <td>ZIMBABWE</td>
             <td>15:00hours</td>
-            <td>k50</td>
+            <td>K150</td>
 
           </tr>
 
@@ -79,7 +84,7 @@ export default  class RoutesComponent2 extends Component{
             <td>SIAVONGA</td>
             <td>BOTSWANA</td>
             <td>12:00hours</td>
-            <td>k120</td>
+            <td>K120</td>
           </tr>
 
 
@@ -87,7 +92,7 @@ export default  class RoutesComponent2 extends Component{
             <td>CHILLIABOMBWE</td>
             <td>DRC</td>
             <td>10:00hours</td>
-            <td>k60</td>
+            <td>K260</td>
           </tr>
 
           <tr>
@@ -107,7 +112,7 @@ export default  class RoutesComponent2 extends Component{
             <td>kITWE</td>
             <td>SOUTHAFRICA</td>
             <td>07.00hours</td>
-            <td>K90</td>
+            <td>K190</td>
           </tr>
         </tbody>
       </Table>
