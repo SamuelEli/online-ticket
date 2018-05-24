@@ -13,12 +13,12 @@ export default  class RoutesForm2 extends Component{
         <div>
           <Navbar/>
         </div>
-
         <h3>international fares table</h3>
+        <h5 className="header-two">for local fares and bus schedules
 
         <a
           href="/Routes"
-          id="Routes"><h5>Routes</h5></a>
+          id="RoutesForm2"> Click here</a></h5>
 
         <div>
       <Table className="sarah">
@@ -27,6 +27,7 @@ export default  class RoutesForm2 extends Component{
             <th data-field="from">FROM</th>
             <th data-field="to">TO</th>
             <th data-field="time">DEPARTURE TIME</th>
+            <th data-field="fares">Arrival time</th>
             <th data-field="fares">FARES</th>
           </tr>
         </thead>
@@ -37,6 +38,7 @@ export default  class RoutesForm2 extends Component{
             <td>MALAWI</td>
             <td>04:30hours</td>
             <td>K185</td>
+            <td>K185</td>
           </tr>
 
           <tr>
@@ -44,18 +46,22 @@ export default  class RoutesForm2 extends Component{
             <td>ZIMBABWE</td>
             <td>04:00hours</td>
             <td>K170</td>
+            <td>K185</td>
           </tr>
           <tr>
             <td>DRC</td>
             <td>NDOLA</td>
             <td>07.00hours</td>
             <td>K90</td>
+            <td>K185</td>
+
           </tr>
           <tr>
             <td>LIVINGSTONE</td>
             <td>NAMIBIA</td>
             <td>16.00hours</td>
             <td>K1270</td>
+            <td>K185</td>
           </tr>
 
           <tr>
@@ -63,6 +69,8 @@ export default  class RoutesForm2 extends Component{
             <td>SOLWEZI</td>
             <td>8.00hours</td>
             <td>K150</td>
+            <td>K185</td>
+
           </tr>
 
           <tr>
@@ -70,6 +78,7 @@ export default  class RoutesForm2 extends Component{
             <td>MANSA</td>
             <td>09.00hours</td>
             <td>K100</td>
+            <td>K185</td>
           </tr>
 
           <tr>
@@ -77,6 +86,7 @@ export default  class RoutesForm2 extends Component{
             <td>ZIMBABWE</td>
             <td>15:00hours</td>
             <td>K150</td>
+            <td>K185</td>
 
           </tr>
 
@@ -85,6 +95,7 @@ export default  class RoutesForm2 extends Component{
             <td>BOTSWANA</td>
             <td>12:00hours</td>
             <td>K120</td>
+            <td>K185</td>
           </tr>
 
 
@@ -93,6 +104,7 @@ export default  class RoutesForm2 extends Component{
             <td>DRC</td>
             <td>10:00hours</td>
             <td>K260</td>
+            <td>K185</td>
           </tr>
 
           <tr>
@@ -100,6 +112,7 @@ export default  class RoutesForm2 extends Component{
             <td>NAMIBAIA</td>
             <td>15:00hours</td>
             <td>K150</td>
+            <td>K185</td>
           </tr>
 
           <tr>
@@ -107,12 +120,14 @@ export default  class RoutesForm2 extends Component{
             <td>TANZANIA</td>
             <td>15:00hours</td>
             <td>K150</td>
+            <td>K185</td>
           </tr>
           <tr>
             <td>kITWE</td>
             <td>SOUTHAFRICA</td>
             <td>07.00hours</td>
             <td>K190</td>
+            <td>K185</td>
           </tr>
         </tbody>
       </Table>
