@@ -7,10 +7,9 @@ import { Meteor } from 'meteor/meteor';
 export default class Footer extends Component {
     render() {
         return(
-            <div>
                 <div>
                     <footer className="page-footer">
-                        <div className="container">
+                        <div className="container" id="footer">
                             <div className="row">
                             <div className="col l6 s12">
                                 <h5 className="white-text">Footer Content</h5>
@@ -35,7 +34,6 @@ export default class Footer extends Component {
                         </div>
                     </footer>
                 </div>
-            </div>
         )
     }
 }

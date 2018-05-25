@@ -17,19 +17,22 @@ export default class CreateAccount extends Component {
       }
     }
     
-    // popupLog
+    // popupLogIn
       componentDidMount(){
         $(document).ready(function(){
           $('.modal').modal();
+          $('select').formSelect();
+
+
+        
+
         });
             
       }
 
-
-
-    goToContacts = () => {
-      route.go('/dashboard',{_id:this.state.name},{});
-    }
+    // goToContacts = () => {
+    //   route.go('/dashboard',{_id:this.state.name},{});
+    // }
     
     getUserData =(e) =>{
       e.preventDefault();
@@ -75,23 +78,28 @@ export default class CreateAccount extends Component {
 
       // loginForm
   <div id="modal1" className="modal">
-    <div class="modal-content">
-    <LogIn/>
+    <div className="modal-content">
+      <LogIn/>
     </div>
-    <div class="modal-footer">
+    <div id="modal1" className="modal modal-fixed-footer">
     </div>
-    </div>
+    <a href="#" className="modal-close waves-effect waves-green btn-flat"></a>
+  </div>
+  
       )
     }
     render() {
       return(
         <div>
           <Navbar CreateAccount={'active'}/>
+
           {this.renderLogin()}
           <div>
             <br/>
             <div className="Container">
-            <p className="btnpara"> Already have an account? <a href="#modal1" id="LoginButton">Log In here</a></p>
+            <p className="signup-title btnpara">sign up</p>
+            <p className="btnpara"> Already have an account? <a className="waves-effect waves-light modal-trigger" href="#modal1" id="LoginButton">Log In here</a></p><br/>
+
               <div className="CreateAccount">
                 <div className="row justify-content-center">
                   <div className="col-md-4">
@@ -131,7 +139,7 @@ export default class CreateAccount extends Component {
                             <label for="icon_prefix">Confirm password</label>
                         </div>
                         <br/>
-                      
+
                         <div className="text-center">
                           <input type="submit" value="CreateAccount" id="submitbtn"/>
                         </div>
