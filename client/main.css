@@ -103,7 +103,6 @@ a {
   padding: 6em 0 8em;
   background: linear-gradient(to right, #dfe7e6, #eee8e8);
   clip-path: polygon(100% 100%, 0 82%, 0 0, 100% 18%);
-  /* margin-bottom: -6rem 0; */
 }
 
 .component-one {
@@ -121,7 +120,6 @@ a {
   background:#eee8e8;
   clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
 }
-
 
 .title {
   color: #00b890;
@@ -177,7 +175,7 @@ a {
 
 }
 
-/* SignUp */
+/* Samuel SignUp */
 .CreateAccount{
   width: 40%;
   margin-left: 28%;
@@ -212,13 +210,107 @@ a {
   background-color: white;
   color: orange;
 }
+    margin-bottom: 0%;
+}
+
+#footer{
+  background-color: #282828;
+}
+
+   /*RoutesForms*/
+.routes-heading {
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.sarah {
+   border-collapse: collapse;
+   width: 100%;
+}
+
+.header-two, #RoutesForm2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.sarah td, .sarah th {
+    padding: 6px;
+    padding-left: 4rem;
+    overflow-x:auto;
+}
+
+.sarah tr:hover{
+    background-color: #ddd;
+  }
+  
+  #LoginButton{
+    background-color: white;
+    color: orange;
+    margin-left: 0%;
+  }
+.sarah tr{
+    text-align: center;
+    margin-left: 1%;
+    font-style: italic;
+  }
+
+.sarah tr:nth-child(even){
+    background-color: #f2f2f2;
+  }
+
+
+.sarah th{
+    /*padding: 20px 15px;*/
+    text-align: left;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #fff;
+    text-transform: uppercase;
+    background-color:#00b891;
+
+}
+
+
+#RoutesForm2:hover{
+  color: #3099AA;
+  background-color: white;
+}
+
+
+#Routes:hover{
+  color: #3088FF;
+  background-color: white;
+}
+
+#LoginButton{
+  background-color: white;
+  color: orange;
+}
+
 
 #LoginButton:hover{
   color: green;
 }
 
-/* 
-#card-hover:hover {
-  transform: scale(1.1);
-  transition: all .3s all;
-} */
+.signup-title {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: .2px;
+}
+
+.btnpara{
+  margin-left: 28%;
+  font-style: italic;
+}
+
+.Navbar{
+  background-color: #00b891;
+}
+

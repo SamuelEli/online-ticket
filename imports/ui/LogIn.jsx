@@ -18,7 +18,7 @@ export default class Login extends Component{
       Meteor.loginWithPassword(email,password, err=>{
         err? console.log(err.reason):
         //  email = Meteor.user().emails[0].address
-         route.go('/useraccount?email='+email);
+         route.go('/?email='+email);
       })
     }
    
@@ -46,7 +46,7 @@ export default class Login extends Component{
                <label type="password">Password</label>
             </div>
           </div>
-        <a type="submit" className="waves-effect waves-light btn modal-trigger" href="#LogIn" id="LoginButton"> LogIn</a>
+        <a type="submit" className="waves-effect waves-light btn modal-trigger" id="LoginButton"> LogIn</a>
          </form>              
        </div>
       </div>
@@ -56,3 +56,4 @@ export default class Login extends Component{
           )
       }
   }
+
