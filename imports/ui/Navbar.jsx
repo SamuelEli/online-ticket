@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import 'react-materialize';
 import { Row, Input } from 'react-materialize';
 import CreateAccount from './CreateAccount';
+import Operators from './Operators';
 
 
 goToHome = () => {
@@ -25,6 +26,10 @@ gotToCreateAccount = () => {
 
 goToRoutes = () => {
     route.go('/Routes')
+}
+
+goToOperators = () => {
+    route.go('/Operators')
 }
 
 export default class Navbar extends Component {

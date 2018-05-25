@@ -53,7 +53,12 @@ h3 {
 
 #logo {
   font-family: 'Pacifico', cursive;
-  text-decoration-line: underline;
+  /* text-decoration-line: underline; */
+}
+
+#logo-footer {
+  font-family: 'Pacifico', cursive;
+  /* text-decoration-line: underline; */
 }
 
 h6 a {
@@ -143,19 +148,19 @@ a {
 
 
 .page-footer {
-padding-top: 20px;
-color: #979899;
-background-color: #272829;
-font-size: 0.8rem;
+  padding-top: 20px;
+  color: #979899;
+  background-color: #272829;
+  font-size: 0.8rem;
 }
 
-.page-copyright .page-copyright {
+.page-copyright {
 /* background: #171819; */
-text-transform: uppercase;
-font-size: x-small;
-letter-spacing: 1.4px;
-font-family:'Fira Sans', sans-serif;
-color: #979899;
+  text-transform: uppercase;
+  font-size: x-small;
+  letter-spacing: 1.4px;
+  font-family:'Fira Sans', sans-serif;
+  color: #979899;
 }
 
 .new {
@@ -167,8 +172,8 @@ color: #979899;
   color: white;
   text-align: center;
   margin-bottom: 3%;
- background-position: 100% 100%;
- background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
 
 }
 
@@ -176,7 +181,7 @@ color: #979899;
 .CreateAccount{
   width: 40%;
   margin-left: 28%;
-  }
+}
 
 #submitbtn{
   border: 0;
@@ -197,17 +202,23 @@ color: #979899;
 .field{
   width: 100%;
   padding-left: 0%;
-  }
+}
 
-  .footer-copyright{
-    margin-bottom: 0%;
-  }
-  
-  #LoginButton{
-    background-color: white;
-    color: orange;
-  }
+.footer-copyright{
+  margin-bottom: 0%;
+}
+
+#LoginButton{
+  background-color: white;
+  color: orange;
+}
 
 #LoginButton:hover{
   color: green;
 }
+
+/* 
+#card-hover:hover {
+  transform: scale(1.1);
+  transition: all .3s all;
+} */

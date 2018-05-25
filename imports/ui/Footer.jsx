@@ -13,8 +13,13 @@ export default class Footer extends Component {
                         <div className="container">
                             <div className="row">
                             <div className="col l6 s12">
-                                <h5 className="white-text">Footer Content</h5>
-                                <p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                            
+                                <h5>
+                                    <a href="/" className="brand-logo" onClick={this.goToHome}> <span id="logo-footer"> On|Bus Services </span> </a>
+                                </h5>
+
+                
+                                <p className="grey-text text-darken-1">This website and its content is copyright <br/> of  <span id="logo-footer"> <a>On|Bus Services</a> </span>. All rights reserved.</p>
                             </div>
                             <div className="col l4 offset-l2 s12 right-align">
                                 <h5 className="white-text">Links</h5>
@@ -29,7 +34,7 @@ export default class Footer extends Component {
                         </div>
                         <div className="footer-copyright black">
                             <div className="container">
-                            © 2018 Copyright Text
+                            © 2018
                             <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
                             </div>
                         </div>
