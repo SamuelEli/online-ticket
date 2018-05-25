@@ -133,8 +133,9 @@ export default class CreateAccount extends Component {
       </div>
 
         </div>
-      <Footer/> 
+       
         </div>
+        <Footer/>
         </div>
       )
     }
