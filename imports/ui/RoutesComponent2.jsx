@@ -3,24 +3,23 @@ import ReactDOM from 'react-dom';
 import Navbar from '/imports/ui/Navbar';
 import Footer from '/imports/ui/Footer.jsx';
 import { Row, Input, Table } from 'react-materialize';
-import RoutesForm2 from '/imports/ui/RoutesComponent2.jsx';
+import Routes from '/imports/ui/RoutesComponent.jsx';
 
 
-export default  class RoutesForm extends Component{
+export default  class RoutesForm2 extends Component{
   render(){
     return(
       <div>
         <div>
           <Navbar/>
         </div>
-        {/* <br/> */}
-          <h3>local fares table</h3>
-          <h5 className="header-two"> For international fares and bus schedules
-            <a
-              href="/RoutesForm2"
-              id="RoutesForm2"> click here</a></h5>
+        <h3>international fares table</h3>
+        <h5 className="header-two">for local fares and bus schedules
 
-              {/* <RoutesForm2/> */}
+        <a
+          href="/Routes"
+          id="RoutesForm2"> Click here</a></h5>
+
         <div>
       <Table className="sarah">
         <thead>
@@ -36,97 +35,99 @@ export default  class RoutesForm extends Component{
         <tbody>
           <tr>
             <td>LUSAKA</td>
-            <td>SOLWEZI</td>
+            <td>MALAWI</td>
             <td>04:30hours</td>
-            <td>K85</td>
-            <td>K85</td>
+            <td>K185</td>
+            <td>K185</td>
           </tr>
 
           <tr>
             <td>LIVINGSTONE</td>
-            <td>KITWE</td>
+            <td>ZIMBABWE</td>
             <td>04:00hours</td>
-            <td>K70</td>
-            <td>K85</td>
+            <td>K170</td>
+            <td>K185</td>
           </tr>
           <tr>
-            <td>KITWE</td>
+            <td>DRC</td>
             <td>NDOLA</td>
             <td>07.00hours</td>
             <td>K90</td>
-            <td>K85</td>
+            <td>K185</td>
+
           </tr>
           <tr>
             <td>LIVINGSTONE</td>
-            <td>CHAIPATA</td>
+            <td>NAMIBIA</td>
             <td>16.00hours</td>
-            <td>K70</td>
-            <td>K85</td>
+            <td>K1270</td>
+            <td>K185</td>
           </tr>
 
           <tr>
+            <td>ANGOLAs</td>
             <td>SOLWEZI</td>
-            <td>LUANGWA</td>
             <td>8.00hours</td>
             <td>K150</td>
-            <td>K85</td>
+            <td>K185</td>
+
           </tr>
 
           <tr>
-            <td>CHINGOLA</td>
+            <td>TANZANIA</td>
             <td>MANSA</td>
             <td>09.00hours</td>
             <td>K100</td>
-            <td>K85</td>
+            <td>K185</td>
           </tr>
 
           <tr>
-            <td>MPIKA</td>
             <td>CHOMA</td>
+            <td>ZIMBABWE</td>
             <td>15:00hours</td>
-            <td>K50</td>
-            <td>K85</td>
+            <td>K150</td>
+            <td>K185</td>
 
           </tr>
 
           <tr>
             <td>SIAVONGA</td>
-            <td>MONGO</td>
+            <td>BOTSWANA</td>
             <td>12:00hours</td>
             <td>K120</td>
-            <td>K85</td>
+            <td>K185</td>
           </tr>
 
 
           <tr>
-            <td>KAFUE</td>
             <td>CHILLIABOMBWE</td>
+            <td>DRC</td>
             <td>10:00hours</td>
-            <td>K60</td>
-            <td>K85</td>
+            <td>K260</td>
+            <td>K185</td>
           </tr>
 
           <tr>
-            <td>MAZABUKA</td>
             <td>KASAMA</td>
+            <td>NAMIBAIA</td>
             <td>15:00hours</td>
             <td>K150</td>
-            <td>K85</td>
+            <td>K185</td>
           </tr>
 
           <tr>
-            <td>KABWE</td>
-            <td>MONZE</td>
+            <td>LUSAKA</td>
+            <td>TANZANIA</td>
             <td>15:00hours</td>
             <td>K150</td>
-            <td>K85</td>
+            <td>K185</td>
           </tr>
           <tr>
             <td>kITWE</td>
-            <td>NDOLA</td>
+            <td>SOUTHAFRICA</td>
             <td>07.00hours</td>
-            <td>K90</td>
-            <td>K85</td>
+            <td>K190</td>
+            <td>K185</td>
           </tr>
         </tbody>
       </Table>
