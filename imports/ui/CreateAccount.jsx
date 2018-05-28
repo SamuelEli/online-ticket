@@ -50,8 +50,7 @@ export default class CreateAccount extends Component {
         return;
       };
       
-      if(password.length <=6
-      ){
+      if(password.length <=6) {
         this.setState({
           error2: "Password too short"
         })

@@ -53,7 +53,12 @@ h3 {
 
 #logo {
   font-family: 'Pacifico', cursive;
-  text-decoration-line: underline;
+  /* text-decoration-line: underline; */
+}
+
+#logo-footer {
+  font-family: 'Pacifico', cursive;
+  /* text-decoration-line: underline; */
 }
 
 h6 a {
@@ -148,6 +153,7 @@ a {
 }
 
 .page-copyright {
+/* background: #171819; */
   text-transform: uppercase;
   font-size: x-small;
   letter-spacing: 1.4px;
@@ -172,7 +178,7 @@ a {
 .CreateAccount{
   width: 40%;
   margin-left: 28%;
-  }
+}
 
 #submitbtn{
   border: 0;
@@ -196,6 +202,13 @@ a {
 }
 
 .footer-copyright{
+  margin-bottom: 0%;
+}
+
+#LoginButton{
+  background-color: white;
+  color: orange;
+}
     margin-bottom: 0%;
 }
 
