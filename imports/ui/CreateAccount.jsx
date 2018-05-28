@@ -108,7 +108,7 @@ export default class CreateAccount extends Component {
                           <i className="material-icons prefix">account_circle</i>
                           <input type="text" className="form-control" name="name" label="Full name" required />
                           <label for="icon_prefix">Full name</label>
-                        </div>
+                        </div><br/>
 
                         <div className="input-field">
                         <i className="material-icons prefix">email</i>

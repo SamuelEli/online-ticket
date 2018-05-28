@@ -17,8 +17,8 @@ export default class Login extends Component{
       const password = e.target.password.value;
       Meteor.loginWithPassword(email,password, err=>{
         err? console.log(err.reason):
-        //  email = Meteor.user().emails[0].address
-         route.go('/?email='+email);
+         email = Meteor.user().emails[0].address
+        //  route.go('/?email='+email);
       })
     }
    
