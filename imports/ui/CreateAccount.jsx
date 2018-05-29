@@ -16,24 +16,12 @@ export default class CreateAccount extends Component {
        error2 :"",
       }
     }
-    
+
     // popupLogIn
       componentDidMount(){
-        $(document).ready(function(){
-          $('.modal').modal();
-          $('select').formSelect();
-
-
-        
-
-        });
-            
+        $('.modal').modal();
       }
 
-    // goToContacts = () => {
-    //   route.go('/dashboard',{_id:this.state.name},{});
-    // }
-    
     getUserData =(e) =>{
       e.preventDefault();
       const {target} = e;
@@ -42,14 +30,14 @@ export default class CreateAccount extends Component {
       const phone = target.phone.value;
       const password = target.password.value;
       const password2 = target.password2.value;
-      
+
       if(password.trim()!==password2.trim()){
         this.setState({
           error: "Passwords do not match"
         })
         return;
       };
-      
+
       if(password.length <=6) {
         this.setState({
           error2: "Password too short"
@@ -65,7 +53,7 @@ export default class CreateAccount extends Component {
         },
         createdAt: new Date()
       }
-      
+
       Accounts.createUser(user,error=>{
         error ? console.log(error.reason) : console.log("Account Created Successfully")
       }) ;
@@ -84,7 +72,7 @@ export default class CreateAccount extends Component {
     </div>
     <a href="#" className="modal-close waves-effect waves-green btn-flat"></a>
   </div>
-  
+
       )
     }
     render() {
@@ -105,21 +93,21 @@ export default class CreateAccount extends Component {
                     <form onSubmit = {this.getUserData} className="needs-validation">
                         <div className="input-field">
                           <i className="material-icons prefix">account_circle</i>
-                          <input type="text" className="form-control" name="name" label="Full name" required />
-                          <label for="icon_prefix">Full name</label>
+                          <input type="text" className="form-control" name="name" required />
+                          <label>Full name</label>
                         </div><br/>
 
                         <div className="input-field">
                         <i className="material-icons prefix">email</i>
                             <input type="email" className="form-control" name="email" label="Email Address" required/>
-                            <label for="icon_prefix">email</label>
+                            <label>email</label>
                         </div>
                         <br/>
 
                         <div className="input-field">
                         <i className="material-icons prefix">phone</i>
                             <input type="number" className="form-control" name="phone" label="Telephone" required/>
-                            <label for="icon_prefix">Telephone</label>
+                            <label>Telephone</label>
                         </div>
                         <br/>
 
@@ -127,7 +115,7 @@ export default class CreateAccount extends Component {
                         <i className="material-icons prefix">visibility</i>
                             <input type="password"  className="form-control" name="password"  label="Password" required/>
                             <p style={{color:"red"}}>{this.state.error2}</p>
-                            <label for="icon_prefix">Password</label>
+                            <label>Password</label>
                         </div>
                         <br/>
 
@@ -135,7 +123,7 @@ export default class CreateAccount extends Component {
                         <i className="material-icons prefix">visibility</i>
                             <input type="password" className="form-control" name="password2" label="Confirm password" required/>
                             <p style={{color:"red"}}>{this.state.error}</p>
-                            <label for="icon_prefix">Confirm password</label>
+                            <label>Confirm password</label>
                         </div>
                         <br/>
 
@@ -147,7 +135,7 @@ export default class CreateAccount extends Component {
                 </div>
               </div>
             </div>
-          <Footer/> 
+          <Footer/>
           </div>
         </div>
       )

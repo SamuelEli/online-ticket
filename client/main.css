@@ -88,9 +88,9 @@ Input::placeholder {
   font-size: 1.3rem;
 }
 
-a {
+/* a {
   color: #ffab00;
-}
+} */
 
 .about {
   font-size: 1.5rem;
@@ -191,9 +191,9 @@ a {
   transition: .7s background ease;
 }
 
-#submitbtn:hover{
+ #submitbtn:hover{
   background: orange;
-}
+} 
 
 /* SignIn */
 .field{
@@ -208,8 +208,6 @@ a {
 #LoginButton{
   background-color: white;
   color: orange;
-}
-    margin-bottom: 0%;
 }
 
    /*RoutesForms*/
@@ -246,7 +244,7 @@ a {
   
   #LoginButton{
     background-color: white;
-    color: orange;
+    /* color: orange; */
     margin-left: 0%;
   }
 
@@ -282,7 +280,7 @@ a {
 
 #LoginButton{
   background-color: white;
-  color: orange;
+  /* color: orange; */
 }
 
 #LoginButton:hover{

@@ -1,8 +1,6 @@
 // Samuel Eli
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-// import 'react-materialize';
-// import { Row, Input } from 'react-materialize';
 import CreateAccount from './CreateAccount';
 import Operators from './Operators';
 
@@ -84,3 +82,26 @@ render(){
     </ul>
 </div>
 )}}
+
+//     meteor.userId()?
+//     <>
+//     <ul className="right hide-on-med-and-down">
+//     <li> <a href="/" onClick={this.goToHome}>Home</a></li>
+//     <li> <a href="/Routes" onClick={this.goToRoutes} id="button">Route</a></li>
+//     <li> <a onClick={this.SignOut} className="">SignOut</a></li>
+//     </ul>
+//     </>
+//     :
+//     <>
+//     <ul className="right hide-on-med-and-down">
+//     <li> <a href="/" onClick={this.goToHome}>Home</a></li>
+//     <li> <a href="/Routes" onClick={this.goToRoutes} id="button">Route</a></li>
+//     <li> <a  href="/CreateAccount"  onClick={this.goToCreateAccount} className="">SignUp/Login</a></li>
+// </ul>
+//     </> */}
+
+//  LogOut=(e) => {
+//     preventDefault();
+//     Meteor.logout();
+//   FlowRouter.go('/')
+// }
