@@ -19,7 +19,7 @@ export default class Login extends Component{
         error?
          console.log(error.reason):
         //  email = Meteor.user().emails[0].address
-         route.go('BodyComponent?email='+email)
+         route.go('/')
       });
     }
 

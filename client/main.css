@@ -16,7 +16,7 @@ body {
 .header {
   background: linear-gradient(to bottom, #00b891 20%,#1ebcb4 80%);
   color: #fff;
-  height: 190vh;
+  height: 140vh;
   position: relative;
   padding-bottom: 2rem;
   clip-path: polygon(100% 100%, 0 90%, 0 0, 100% 0);
@@ -26,7 +26,7 @@ nav {
   background: #00b891;
   box-shadow: none;
   padding-top: 2em;
-  z-index: 100000;
+  z-index: 1000;
   padding-bottom: 6em;
   line-height: 40px;
   display: block;
@@ -191,9 +191,9 @@ Input::placeholder {
   transition: .7s background ease;
 }
 
- #submitbtn:hover{
-  background: orange;
-} 
+#submitbtn{
+  background-color: orange;
+}
 
 /* SignIn */
 .field{
@@ -243,8 +243,8 @@ Input::placeholder {
   }
   
   #LoginButton{
-    background-color: white;
-    /* color: orange; */
+    background-color:orange;
+    color: orange;
     margin-left: 0%;
   }
 

@@ -6,7 +6,6 @@ import route from '/imports/routing/router.js';
 import Footer from './Footer';
 import  Navbar from '/imports/ui/Navbar.jsx';
 import LogIn from '/imports/ui/LogIn.jsx';
-import {Row, Icon, Input} from 'react-materialize';
 
 export default class CreateAccount extends Component {
   constructor(props){

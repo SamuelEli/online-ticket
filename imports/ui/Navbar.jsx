@@ -1,33 +1,13 @@
 // Samuel Eli
+import { Meteor } from 'meteor/meteor'
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import CreateAccount from './CreateAccount';
 import Operators from './Operators';
+import route from '/imports/routing/router.js'
+// import Meteor from 'meteor/meteor';
 
 
-goToHome = () => {
-    route.go('/')
-}
-
-goToRoutes = () => {
-    route.go('/Routes')
-}
-
-goToReservationForm = () => {
-    route.go('/ReservationForm')
-}
-
-gotToCreateAccount = () => {
-    route.go('/CreateAccount')
-}
-
-goToRoutes = () => {
-    route.go('/Routes')
-}
-
-goToOperators = () => {
-    route.go('/Operators')
-}
 
 export default class Navbar extends Component {
     componentDidMount(){
@@ -49,7 +29,53 @@ export default class Navbar extends Component {
             $('.sidenav').sidenav();
         },2000)
     });
+
+
+    if(Meteor.userId()){
+        $("#logOut2").show();
+        $("#logOut1").hide();
+        // console.log("you're logged in")
+    } 
+    else {
+        $("#logOut2").hide();
+        $("#logOut1").show();
+        // console.log("you're logged out")
+    }
 }
+
+
+goToHome = () => {
+    route.go('/')
+}
+
+goToRoutes = () => {
+    route.go('/Routes')
+}
+
+goToReservationForm = () => {
+    route.go('/ReservationForm')
+}
+
+goToCreateAccount = () => {
+    route.go('/CreateAccount')
+}
+
+goToRoutes = () => {
+    route.go('/Routes')
+}
+
+goToOperators = () => {
+    route.go('/Operators')
+}
+
+logOut = (e) => {
+    e.preventDefault()
+    Meteor.logout();
+    window.location.reload();
+    route.go('/')
+    // console.log('logged out')
+}
+
 
 render(){
     return (
@@ -58,13 +84,29 @@ render(){
    <nav className="Navbar">
         <div className="container">
             <div className="nav-wrapper">
-                <div className="nav-wrapper">
-                    <h6><a href="/" className="brand-logo" onClick={this.goToHome}> <span id="logo"> On|Bus Services</span></a></h6>
+                <div className="nav-wrapper" id="logOut2" >
+                    <h6><a href="" className="brand-logo" onClick={this.goToHome}> <span id="logo"> On|Bus Services</span></a></h6>
                     <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
                     <ul className="right hide-on-med-and-down">
-                        <li> <a href="/" onClick={this.goToHome}>Home</a></li>
-                        <li> <a href="/Routes" onClick={this.goToRoutes} id="button">Route</a></li>
-                        <li> <a  href="/CreateAccount"  onClick={this.goToCreateAccount} className="waves-effect btn amber accent-4">SignUp/Login</a></li>
+                        <li> <a href="" onClick={this.goToHome}>Home</a></li>
+                        <li> <a href="" onClick={this.goToRoutes}>Route</a></li>
+                       
+                        <li>
+                         <button  onClick={this.logOut} className="waves-effect btn amber accent-4">LogOut</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div className="nav-wrapper" id="logOut1" >
+                    <h6><a href="" className="brand-logo" onClick={this.goToHome}> <span id="logo"> On|Bus Services</span></a></h6>
+                    <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+                    <ul className="right hide-on-med-and-down">
+                        <li> <a href="" onClick={this.goToHome}>Home</a></li>
+                        <li> <a href="" onClick={this.goToRoutes}>Route</a></li>
+                        <li > <a  href=""  onClick={this.goToCreateAccount} className="waves-effect btn amber accent-4">SignUp/Login</a></li>
+                        
+                         
+
                     </ul>
                 </div>
             </div>
@@ -73,35 +115,12 @@ render(){
     
     <ul className="sidenav" id="mobile-demo">
     <div className="input-field"><i className="material-icons prefix">home</i>
-       <li><a href="/" onClick={this.goToHome}>Home</a></li>
+       <li><a href="" onClick={this.goToHome}>Home</a></li>
        </div>
        <div className="input-field"><i className="material-icons prefix">airport_shuttle</i>
-       <li><a href="/Routes" onClick={this.goToRoutes}>Route</a></li>
+       <li><a href="" onClick={this.goToRoutes}>Route</a></li>
        </div>
-       <li><a  href="/CreateAccount"  onClick={this.goToCreateAccount}>SignUp/Login</a></li>
+       <li><a  href=""  onClick={this.goToCreateAccount}>SignUp/Login</a></li>
     </ul>
 </div>
 )}}
-
-//     meteor.userId()?
-//     <>
-//     <ul className="right hide-on-med-and-down">
-//     <li> <a href="/" onClick={this.goToHome}>Home</a></li>
-//     <li> <a href="/Routes" onClick={this.goToRoutes} id="button">Route</a></li>
-//     <li> <a onClick={this.SignOut} className="">SignOut</a></li>
-//     </ul>
-//     </>
-//     :
-//     <>
-//     <ul className="right hide-on-med-and-down">
-//     <li> <a href="/" onClick={this.goToHome}>Home</a></li>
-//     <li> <a href="/Routes" onClick={this.goToRoutes} id="button">Route</a></li>
-//     <li> <a  href="/CreateAccount"  onClick={this.goToCreateAccount} className="">SignUp/Login</a></li>
-// </ul>
-//     </> */}
-
-//  LogOut=(e) => {
-//     preventDefault();
-//     Meteor.logout();
-//   FlowRouter.go('/')
-// }
