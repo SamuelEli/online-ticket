@@ -47,7 +47,7 @@ export default class Login extends Component{
                <label type="password">Password</label>
             </div>
           </div>
-        <button type="submit" className="waves-effect waves-light btn modal-trigger" id="LoginButton"> LogIn</button>
+        <button type="submit" className="waves-effect waves-dark btn amber accent-4 modal-trigger">LogIn</button>
          </form>
        </div>
       </div>

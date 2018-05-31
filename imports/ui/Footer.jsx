@@ -8,8 +8,8 @@ export default class Footer extends Component {
     render() {
         return(
                 <div>
-                    <footer className="footer">
-                        <div className="container" id="footer">
+                    <footer className="page-footer" id="footer">
+                        <div className="container">
                             <div className="row">
                             <div className="col l6 s12">
                             

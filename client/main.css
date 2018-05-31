@@ -53,7 +53,7 @@ h3 {
 
 #logo {
   font-family: 'Pacifico', cursive;
-  /* text-decoration-line: underline; */
+
 }
 .footer{
   background-color: #575859;
@@ -66,16 +66,12 @@ h3 {
 #logo-footer {
   font-family: 'Pacifico', cursive;
   color: #ffab00;
-  /* text-decoration-line: underline; */
 }
-
 
 #logo-footer-small {
   font-family: 'Pacifico', cursive;
   color: #ffab00;
-  /* text-decoration-line: underline; */
 }
-
 
 h6 a {
   font-weight: 400;
@@ -95,7 +91,7 @@ Input::placeholder {
 
 #button {
   border: 2px solid #ffffff;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 #about {
@@ -165,7 +161,6 @@ Input::placeholder {
 }
 
 .page-copyright {
-/* background: #171819; */
   text-transform: uppercase;
   font-size: x-small;
   letter-spacing: 1.4px;
@@ -211,9 +206,8 @@ Input::placeholder {
   margin-bottom: 0;
 }
 
-#LoginButton{
-  background-color: white;
-  color: orange;
+#footer{
+  background-color: #282828;
 }
 
    /*RoutesForms*/
@@ -265,7 +259,6 @@ Input::placeholder {
   }
 
 .sarah th{
-    /*padding: 20px 15px;*/
     text-align: left;
     font-weight: 700;
     font-size: 1.1rem;
@@ -286,7 +279,6 @@ Input::placeholder {
 
 #LoginButton{
   background-color: white;
-  /* color: orange; */
 }
 
 #LoginButton:hover{

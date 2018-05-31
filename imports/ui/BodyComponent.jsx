@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Meteor } from 'meteor/meteor';
 import 'react-materialize';
-import { Row, Input } from 'react-materialize';
+import { Row, Input, Carousel } from 'react-materialize';
 import route from '/imports/routing/router.js';
 
 
@@ -26,29 +26,48 @@ export default class Home extends Component {
                 </div>
                 <br/>
                 <div className="component">
-                    <div>
-                        <div className="container">
-                                <div className="row">
-                                    <div className="center-align">
-                                        <h2 className="title">Beautiful places our services will take you to</h2>
-                                    </div>
+                    <div className="container">
+                        <div className="row">
+                            <div className="center-align">
+                                <h2 className="title">Beautiful places our services will take you to</h2>
+                            </div>
 
-                                    <div className="items">
-                                        <div className="col s12 l4">
-                                            <div className="left-align">
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti laborum voluptate commodi asperiores! Exercitationem, sapiente consequuntur nobis, fugit praesentium inventore eveniet tempora blanditiis qui quis minus suscipit cum eius reiciendis.</p>
+                            <div className="items">
+                                <div className="col s12 l4">
+                                    <div className="card">
+                                        <div className="card-image">
+                                            <img src="images/Zambia-3.png" alt="" height="190"/>
+                                        </div>
+                                        <div className="card-stacked">
+                                            <div className="card-content">
+                                                <p>WATER FALLS IN ZAMBIA</p>
                                             </div>
                                         </div>
-                                        <div className="col s12 l4">
-                                            <div className="center-align">
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti laborum voluptate commodi asperiores! Exercitationem, sapiente consequuntur nobis, fugit praesentium inventore eveniet tempora blanditiis qui quis minus suscipit cum eius reiciendis.</p>
+                                    </div>
+                                </div>
+                                <div className="col s12 l4">
+                                    <div className="card horizontal">
+                                        <div className="card-image">
+                                            <img src="images/VicFalls.jpg" alt="" height="190"/>
+                                        </div>
+                                        <div className="card-stacked">
+                                            <div className="card-content">
+                                                <p>ZAMBIAN PARKS.</p>
                                             </div>
                                         </div>
-                                        <div className="col s12 l4">
-                                            <div className="right-alight">
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti laborum voluptate commodi asperiores! Exercitationem, sapiente consequuntur nobis, fugit praesentium inventore eveniet tempora blanditiis qui quis minus suscipit cum eius reiciendis.</p>
+                                    </div>
+                                </div>
+                                <div className="col s12 l4">
+                                    <div className="card">
+                                        <div className="card-image">
+                                            <img src="images/Livingstone-Zambia.jpg" alt="" height="190"/>
+                                        </div>
+                                        <div className="card-stacked">
+                                            <div className="card-content">
+                                                <p>VICTORIA FALLS.</p>
                                             </div>
                                         </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -56,12 +75,20 @@ export default class Home extends Component {
                 </div>
                 <div className="container">
                     <div className="new">
-                        <p>Your probably asking/thinking, if other websites already exist for similar purposes, what is the need for another?
-                        Think of it this way, no man who ever achieved the extraordinary escaped the truth of innovation. The
-                        desire to grow as individuals and as a business but most importantly as a team is guarantee enough that we will strive our hardest to give you what you ask for and maybe a little more. Which brings us  back to the age old saying; easier said than done which means that every decision we make is accountable by our beloved clients.</p>
+                        <div className="row" >
+                            <div className="col s12 m3">
+                                <div>
+                                    <img src="images/mosq.png" alt="" width="150"/>
+                                </div>
+                            </div>
+                            <div className="col s12 m9">
+                            <p>Your probably asking/thinking, if other websites already exist for similar purposes, what is the need for another?
+                            Think of it this way, no man who ever achieved the extraordinary escaped the truth of innovation. The
+                            desire to grow as individuals and as a business but most importantly as a team is guarantee enough that we will strive our hardest to give you what you ask for and maybe a little more. Which brings us  back to the age old saying; easier said than done which means that every decision we make is accountable by our beloved clients.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                {/* </div> */}
                 <div className="component-three">
                     <div className="component-two">
                         <div className="component-one">

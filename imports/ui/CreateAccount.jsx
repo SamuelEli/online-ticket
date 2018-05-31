@@ -62,7 +62,6 @@ export default class CreateAccount extends Component {
 
     renderLogin(){
       return(
-
       // loginForm
   <div id="modal1" className="modal">
     <div className="modal-content">
@@ -86,7 +85,7 @@ export default class CreateAccount extends Component {
               <p className="signup-title btnpara">sign up</p>
               <p className="btnpara"> Already have an account? <a className="waves-effect waves-light modal-trigger" href="#modal1" id="LoginButton">Log In here</a></p><br/>
 
-              <div className="CreateAccount">
+              <div className="">
                   <div className="row">
                     <form onSubmit = {this.getUserData} className="needs-validation">
 
@@ -153,7 +152,7 @@ export default class CreateAccount extends Component {
                           </Row>
 
                         <div className="text-center">
-                          <input type="submit" value="CreateAccount" id="submitbtn"/>
+                          <input type="submit" value="CREATE ACCOUNT" className="waves-effect waves-dark btn amber accent-4"/>
                         </div>
                     </form>
                 </div>
