@@ -91,17 +91,7 @@ export default class ReservationForm extends Component {
                                         <span>GENDER</span>
                                         <br/>
                                         <br/>
-                                        <Row>
-                                            <Input name='group1' type='radio' label='Male' className='with-gap' />
-                                            <Input name='group1' type='radio' label='Female' className='with-gap' />
-                                            <Input name='group1' type='radio' label='Other' className='with-gap' />
-                                        </Row>
-                                        <Row>
-                                            <Input name='group2' type='checkbox' label='DO YOU ACCEPT OUR TERMS AND CONDITIONS?' />
-                                        </Row>
-                                        <p>
-                                            <a href="#" className="waves-effect btn amber accent-4">SUBMIT</a>
-                                        </p>
+                                        
                                     </form>
                                 </div>
                             </div>    

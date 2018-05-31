@@ -6,6 +6,7 @@ import route from '/imports/routing/router.js';
 import Footer from './Footer';
 import  Navbar from '/imports/ui/Navbar.jsx';
 import LogIn from '/imports/ui/LogIn.jsx';
+import { Row, Input } from 'react-materialize';
 
 export default class CreateAccount extends Component {
   constructor(props){
@@ -67,8 +68,7 @@ export default class CreateAccount extends Component {
     <div className="modal-content">
       <LogIn/>
     </div>
-    <div id="modal1" className="modal modal-fixed-footer">
-    </div>
+    
     <a href="#" className="modal-close waves-effect waves-green btn-flat"></a>
   </div>
 
@@ -82,59 +82,84 @@ export default class CreateAccount extends Component {
           {this.renderLogin()}
           <div>
             <br/>
-            <div className="Container">
-            <p className="signup-title btnpara">sign up</p>
-            <p className="btnpara"> Already have an account? <a className="waves-effect waves-light modal-trigger" href="#modal1" id="LoginButton">Log In here</a></p><br/>
+            <div className="container">
+              <p className="signup-title btnpara">sign up</p>
+              <p className="btnpara"> Already have an account? <a className="waves-effect waves-light modal-trigger" href="#modal1" id="LoginButton">Log In here</a></p><br/>
 
               <div className="CreateAccount">
-                <div className="row justify-content-center">
-                  <div className="col-md-4">
+                  <div className="row">
                     <form onSubmit = {this.getUserData} className="needs-validation">
+
+                      <div className="col s12 m6">
                         <div className="input-field">
                           <i className="material-icons prefix">account_circle</i>
                           <input type="text" className="form-control" name="name" required />
-                          <label>Full name</label>
-                        </div><br/>
+                          <label>FULL NAME</label>
+                        </div>
+                      </div>
 
-                        <div className="input-field">
-                        <i className="material-icons prefix">email</i>
+                        <div className="col s12 m6">
+                          <div className="input-field">
+                            <i className="material-icons prefix">email</i>
                             <input type="email" className="form-control" name="email" label="Email Address" required/>
-                            <label>email</label>
+                            <label>EMAIL</label>
+                          </div>
                         </div>
-                        <br/>
 
-                        <div className="input-field">
-                        <i className="material-icons prefix">phone</i>
+                        <div className="col s12 m6">
+                          <div className="input-field">
+                            <i className="material-icons prefix">phone</i>
                             <input type="number" className="form-control" name="phone" label="Telephone" required/>
-                            <label>Telephone</label>
+                            <label>TELEPHONE</label>
+                          </div>
                         </div>
-                        <br/>
 
-                        <div className="input-field">
-                        <i className="material-icons prefix">visibility</i>
+                         <div className="col s12 m6">
+                          <div className="input-field">
+                            <i className="material-icons prefix">visibility</i>
                             <input type="password"  className="form-control" name="password"  label="Password" required/>
                             <p style={{color:"red"}}>{this.state.error2}</p>
-                            <label>Password</label>
+                            <label>PASSWORD</label>
+                          </div>
                         </div>
-                        <br/>
 
-                        <div className="input-field">
-                        <i className="material-icons prefix">visibility</i>
+
+                        <div className="col s12 m6">
+                          <div className="input-field">
+                              <i className="material-icons prefix">picture_in_picture</i>
+                              <input  type="number" id="icon_prefix" name="idNumber" className="validate" required/>
+                              <label htmlFor="icon_prefix">NRC/DRIVING LINCENSE NUMBER</label>
+                          </div>
+                        </div>
+
+
+                        <div className="col s12 m6">
+                          <div className="input-field">
+                            <i className="material-icons prefix">visibility</i>
                             <input type="password" className="form-control" name="password2" label="Confirm password" required/>
                             <p style={{color:"red"}}>{this.state.error}</p>
-                            <label>Confirm password</label>
+                            <label>CONFIRM PASSWORD</label>
+                          </div>
                         </div>
-                        <br/>
+
+                          <Row>
+                              <Input name='group1' type='radio' label='Male' className='with-gap' />
+                              <Input name='group1' type='radio' label='Female' className='with-gap' />
+                              <Input name='group1' type='radio' label='Other' className='with-gap' />
+                          </Row>
+
+                          <Row>
+                              <Input name='group2' type='checkbox' label='DO YOU ACCEPT OUR TERMS AND CONDITIONS?' />
+                          </Row>
 
                         <div className="text-center">
                           <input type="submit" value="CreateAccount" id="submitbtn"/>
                         </div>
                     </form>
-                  </div>
                 </div>
               </div>
             </div>
-          <Footer/>
+            <Footer/>
           </div>
         </div>
       )

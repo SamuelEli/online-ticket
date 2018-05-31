@@ -4,16 +4,16 @@ import { Meteor } from 'meteor/meteor';
 import { Row, Input } from 'react-materialize';
 import route from '/imports/routing/router.js';
 
-goToReservationForm = () => {
-    route.go('/ReservationForm')
-}
+// goToReservationForm = () => {
+//     route.go('/ReservationForm')
+// }
 export default class Header extends Component {
     render() {
         return(
-            <div>
-                <div className="header">
-                <div className="container">
-                <header className="intro">
+<div>
+    <div className="header">
+        <div className="container">
+            <header className="intro">
                 <div className="row">
                     <div className="container">
                         <div className="col s12">
@@ -65,8 +65,7 @@ export default class Header extends Component {
 
                                                     <Input s={12} name='on' type='date' onChange={function(e, value) {}} placeholder="Pick a Day" />
                                                     <Input s={12} name='on' type='time' onChange={function(e, value) {}} placeholder="Pick a Time" />
-                                                    
-                                                    <a href="/ReservationForm" className="waves-effect btn-large amber accent-4 left-align p2" onClick={this.goToReservationForm}>Reserve Ticket</a>
+                                                    {/* <a href="/ReservationForm" className="waves-effect btn-large amber accent-4 left-align p2" onClick={this.goToReservationForm}>Reserve Ticket</a> */}
                                                 </div>
                                             </div>
                                         </form>
@@ -74,11 +73,9 @@ export default class Header extends Component {
                                 </div>
                             </div>
                         </div>
-                        </div>
-                        </header>
-                    </div>
                 </div>
-            </div>
-                                    )
-                                    }
-                                    }
+            </header>
+        </div>
+    </div>
+</div>
+)}}

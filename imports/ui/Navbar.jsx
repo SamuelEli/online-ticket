@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import CreateAccount from './CreateAccount';
 import Operators from './Operators';
 import route from '/imports/routing/router.js'
+// import { Row, Input,Navbar } from 'react-materialize';
 // import Meteor from 'meteor/meteor';
 
 
@@ -52,9 +53,9 @@ goToRoutes = () => {
     route.go('/Routes')
 }
 
-goToReservationForm = () => {
-    route.go('/ReservationForm')
-}
+// goToReservationForm = () => {
+//     route.go('/ReservationForm')
+// }
 
 goToCreateAccount = () => {
     route.go('/CreateAccount')

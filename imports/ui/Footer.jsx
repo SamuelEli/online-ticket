@@ -8,7 +8,7 @@ export default class Footer extends Component {
     render() {
         return(
                 <div>
-                    <footer className="page-footer">
+                    <footer className="footer">
                         <div className="container" id="footer">
                             <div className="row">
                             <div className="col l6 s12">
@@ -18,7 +18,7 @@ export default class Footer extends Component {
                                 </h5>
 
                 
-                                <p className="grey-text text-darken-1">This website and its content is copyright <br/> of  <span id="logo-footer"> <a>On|Bus Services</a> </span>. All rights reserved.</p>
+                                <p className="grey-text text-darken-1">This website and its content is copyright <br/> of  <span id="logo-footer-small"> <a>On|Bus Services</a> </span>. All rights reserved.</p>
                             </div>
                             <div className="col l4 offset-l2 s12 right-align">
                                 <h5 className="white-text">Links</h5>
@@ -31,7 +31,7 @@ export default class Footer extends Component {
                             </div>
                             </div>
                         </div>
-                        <div className="footer-copyright black">
+                        <div className="footer-copyright black" id="footer-copyright">
                             <div className="container">
                             © 2018
                             <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
