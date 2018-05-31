@@ -31,7 +31,7 @@ footer {
 .header {
   background: linear-gradient(to bottom, #00b891 20%,#1ebcb4 80%);
   color: #fff;
-  height: 190vh;
+  height: 140vh;
   position: relative;
   padding-bottom: 2rem;
   clip-path: polygon(100% 100%, 0 90%, 0 0, 100% 0);
@@ -41,7 +41,7 @@ nav {
   background: #00b891;
   box-shadow: none;
   padding-top: 2em;
-  z-index: 100000;
+  z-index: 1000;
   padding-bottom: 6em;
   line-height: 40px;
   display: block;
@@ -68,7 +68,18 @@ h3 {
 
 #logo {
   font-family: 'Pacifico', cursive;
-  text-decoration-line: underline;
+  /* text-decoration-line: underline; */
+}
+
+#logo-footer {
+  font-family: 'Pacifico', cursive;
+  color: #ffab00;
+  /* text-decoration-line: underline; */
+}
+
+#logo-footer-small {
+  font-family: 'Pacifico', cursive;
+  color: #ffab00;
 }
 
 h6 a {
@@ -89,7 +100,7 @@ Input::placeholder {
 
 #button {
   border: 2px solid #ffffff;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 #about {
@@ -98,9 +109,9 @@ Input::placeholder {
   font-size: 1.3rem;
 }
 
-a {
+/* a {
   color: #ffab00;
-}
+} */
 
 .about {
   font-size: 1.5rem;
@@ -163,6 +174,7 @@ a {
 }
 
 .page-copyright {
+/* background: #171819; */
   text-transform: uppercase;
   font-size: x-small;
   letter-spacing: 1.4px;
@@ -181,7 +193,10 @@ a {
   margin-bottom: 3%;
   background-position: 100% 100%;
   background-repeat: no-repeat;
+}
 
+.footer-background {
+  background-image: url('images/paisley.png');
 }
 
 /* Samuel SignUp */
@@ -201,8 +216,8 @@ a {
   transition: .7s ;
 }
 
-#submitbtn:hover{
-  background: orange;
+#submitbtn{
+  background-color: orange;
 }
 
 /* SignIn */
@@ -212,9 +227,18 @@ a {
 }
 
 .footer-copyright{
-    margin-bottom: 0%;
+  margin-bottom: 0%;
 }
 
+#LoginButton{
+  background-color: white;
+  color: orange;
+  margin-bottom: 0%;
+}
+
+#footer{
+  background-color: #282828;
+}
 
    /*RoutesForms*/
 .routes-heading {
@@ -242,10 +266,16 @@ a {
     padding: 6px;
     padding-left: 4rem;
     overflow-x:auto;
-}
+  }
 
 .sarah tr:hover{
     background-color: #ddd;
+  }
+  
+  #LoginButton{
+    background-color:orange;
+    color: orange;
+    margin-left: 0%;
   }
 
 .sarah tr{
@@ -258,7 +288,6 @@ a {
     background-color: #f2f2f2;
   }
 
-
 .sarah th{
     /*padding: 20px 15px;*/
     text-align: left;
@@ -267,15 +296,12 @@ a {
     color: #fff;
     text-transform: uppercase;
     background-color:#00b891;
-
-}
-
+  }
 
 #RoutesForm2:hover{
   color: #3099AA;
   background-color: white;
 }
-
 
 #Routes:hover{
   color: #3088FF;
@@ -284,15 +310,26 @@ a {
 
 #LoginButton{
   background-color: white;
-  color: orange;
+  /* color: orange; */
 }
-
 
 #LoginButton:hover{
   color: green;
+}
+
+.signup-title {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: .2px;
 }
 
 .btnpara{
   margin-left: 28%;
   font-style: italic;
 }
+
+.Navbar{
+  background-color: #00b891;
+}
+
