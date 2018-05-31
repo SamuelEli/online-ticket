@@ -6,7 +6,6 @@ import route from '/imports/routing/router.js';
 import Footer from './Footer';
 import  Navbar from '/imports/ui/Navbar.jsx';
 import LogIn from '/imports/ui/LogIn.jsx';
-import {Row, Icon, Input} from 'react-materialize';
 
 export default class CreateAccount extends Component {
   constructor(props){
@@ -16,24 +15,12 @@ export default class CreateAccount extends Component {
        error2 :"",
       }
     }
-    
+
     // popupLogIn
       componentDidMount(){
-        $(document).ready(function(){
-          $('.modal').modal();
-          $('select').formSelect();
-
-
-        
-
-        });
-            
+        $('.modal').modal();
       }
 
-    // goToContacts = () => {
-    //   route.go('/dashboard',{_id:this.state.name},{});
-    // }
-    
     getUserData =(e) =>{
       e.preventDefault();
       const {target} = e;
@@ -42,14 +29,14 @@ export default class CreateAccount extends Component {
       const phone = target.phone.value;
       const password = target.password.value;
       const password2 = target.password2.value;
-      
+
       if(password.trim()!==password2.trim()){
         this.setState({
           error: "Passwords do not match"
         })
         return;
       };
-      
+
       if(password.length <=6) {
         this.setState({
           error2: "Password too short"
@@ -65,7 +52,7 @@ export default class CreateAccount extends Component {
         },
         createdAt: new Date()
       }
-      
+
       Accounts.createUser(user,error=>{
         error ? console.log(error.reason) : console.log("Account Created Successfully")
       }) ;
@@ -75,14 +62,15 @@ export default class CreateAccount extends Component {
     renderLogin(){
       return(
       // loginForm
-        <div id="modal1" className="modal">
-          <div className="modal-content">
-            <LogIn/>
-          </div>
-          <div id="modal1" className="modal modal-fixed-footer">
-          </div>
-          <a href="#" className="modal-close waves-effect waves-green btn-flat"></a>
-        </div>
+  <div id="modal1" className="modal">
+    <div className="modal-content">
+      <LogIn/>
+    </div>
+    <div id="modal1" className="modal modal-fixed-footer">
+    </div>
+    <a href="#" className="modal-close waves-effect waves-green btn-flat"></a>
+  </div>
+
       )
     }
     render() {
@@ -103,22 +91,21 @@ export default class CreateAccount extends Component {
                     <form onSubmit = {this.getUserData} className="needs-validation">
                         <div className="input-field">
                           <i className="material-icons prefix">account_circle</i>
-                          <input type="text" className="form-control" name="name" label="Full name" required />
-                          <label htmlFor="icon_prefix">FULL NAME</label>
-                        </div>
-                        
+                          <input type="text" className="form-control" name="name" required />
+                          <label>Full name</label>
+                        </div><br/>
 
                         <div className="input-field">
                         <i className="material-icons prefix">email</i>
                             <input type="email" className="form-control" name="email" label="Email Address" required/>
-                            <label htmlFor="icon_prefix">EMAIL</label>
+                            <label>email</label>
                         </div>
                         
 
                         <div className="input-field">
                         <i className="material-icons prefix">phone</i>
-                            <input type="tel" className="form-control" name="phone" label="Telephone" required/>
-                            <label htmlFor="icon_prefix">PHONE NUMBER</label>
+                            <input type="number" className="form-control" name="phone" label="Telephone" required/>
+                            <label>Telephone</label>
                         </div>
                         
 
@@ -126,7 +113,7 @@ export default class CreateAccount extends Component {
                         <i className="material-icons prefix">visibility</i>
                             <input type="password"  className="form-control" name="password"  label="Password" required/>
                             <p style={{color:"red"}}>{this.state.error2}</p>
-                            <label htmlFor="icon_prefix">PASSWORD</label>
+                            <label>Password</label>
                         </div>
                         
 
@@ -134,7 +121,7 @@ export default class CreateAccount extends Component {
                         <i className="material-icons prefix">visibility</i>
                             <input type="password" className="form-control" name="password2" label="Confirm password" required/>
                             <p style={{color:"red"}}>{this.state.error}</p>
-                            <label htmlFor="icon_prefix">CONFIRM PASSWORD</label>
+                            <label>Confirm password</label>
                         </div>
                         
 
@@ -146,7 +133,7 @@ export default class CreateAccount extends Component {
                 </div>
               </div>
             </div>
-          <Footer/> 
+          <Footer/>
           </div>
         </div>
       )

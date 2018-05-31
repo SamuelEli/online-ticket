@@ -17,7 +17,8 @@ export default class Home extends Component {
                             <div id="about center-align">
                                 <h2 className="title">About Us</h2>
                                 <div>
-                                    <p className="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolorem id dicta deserunt sit quae saepe recusandae ratione itaque nulla, omnis quos eius in suscipit corporis non qui ipsa dolor.Eos sit facere deleniti vitae cum eaque velit ipsum odit distinctio est eius natus, recusandae placeat blanditiis maxime ducimus pariatur nisi similique iure reiciendis omnis laboriosam earum accusamus. Perferendis, fugiat.</p>
+                                <p className="about">ON bus tickets is a project purely inspired by young people with bright ideas in the spring time of life.
+                                 As web developers we understand that making a travel isn’t just in the destination, it’s in the experience. Our website understands that not every client is familiar with this country so we’d like you to trust  that we will allow to decide which bus operators suite your preferences with a variety of coaches anytime, anywhere. As ON bus tickets, we believe in the social aspect of every user’s embarkation. We would love for you to visit again, well, maybe a little more than twice. However, our main speciality is in working with one operator at a time.</p>
                                 </div>
                             </div>
                         </div>
@@ -81,9 +82,9 @@ export default class Home extends Component {
                                 </div>
                             </div>
                             <div className="col s12 m9">
-                                <p>NEW CLASSLorem, ipsum dolor sit amet consectetur adipisicing elit. Ea sequi harum neque animi at dignissimos velit blanditiis similique, hic, eveniet magnam? Autem eius voluptates necessitatibus! Ea sint earum necessitatibus et.
-                                    Obcaecati temporibus tempora ipsum, corrupti doloribus ea suscipit molestias magnam sint. Iste incidunt dolore modi assumenda explicabo, doloremque est, voluptas quaerat exercitationem non dicta. Quidem labore autem vel similique voluptates!
-                                    Nobis obcaecati nemo reprehenderit rem, explicabo dolorem est non aliquam maiores. Deserunt nesciunt, quidem numquam eos dolore, unde sapiente esse labore perspiciatis saepe, nostrum aperiam tempora odit at eius natus?</p>
+                            <p>Your probably asking/thinking, if other websites already exist for similar purposes, what is the need for another?
+                            Think of it this way, no man who ever achieved the extraordinary escaped the truth of innovation. The
+                            desire to grow as individuals and as a business but most importantly as a team is guarantee enough that we will strive our hardest to give you what you ask for and maybe a little more. Which brings us  back to the age old saying; easier said than done which means that every decision we make is accountable by our beloved clients.</p>
                             </div>
                         </div>
                     </div>
@@ -93,7 +94,7 @@ export default class Home extends Component {
                         <div className="component-one">
                             <div>
                                 <div className="container">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quibusdam odit porro dolorum dolor ad nam omnis sunt debitis magni at numquam, ducimus, neque praesentium repellendus amet quo iure perferendis?</p>
+                                    <p>We have always wanted to be the kind of leaders that are able to convey a vision as clearly as possible, especially with our clients. Sure the application of this principal to make a web application for day-to-day routings may present some difficulties, there is still a lot that can be done with major travel buses in terms of user experience.</p>
                                 </div>
                             </div>
                         </div>

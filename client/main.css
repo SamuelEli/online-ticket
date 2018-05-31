@@ -26,7 +26,7 @@ nav {
   background: #00b891;
   box-shadow: none;
   padding-top: 2em;
-  z-index: 100000;
+  z-index: 1000;
   padding-bottom: 6em;
   line-height: 40px;
   display: block;
@@ -94,9 +94,9 @@ Input::placeholder {
   font-size: 1.3rem;
 }
 
-a {
+/* a {
   color: #ffab00;
-}
+} */
 
 .about {
   font-size: 1.5rem;
@@ -178,7 +178,6 @@ a {
   margin-bottom: 3%;
   background-position: 100% 100%;
   background-repeat: no-repeat;
-
 }
 
 .footer-background {
@@ -202,8 +201,8 @@ a {
   transition: .7s background ease;
 }
 
-#submitbtn:hover{
-  background: orange;
+#submitbtn{
+  background-color: orange;
 }
 
 /* SignIn */
@@ -252,17 +251,18 @@ a {
     padding: 6px;
     padding-left: 4rem;
     overflow-x:auto;
-}
+  }
 
 .sarah tr:hover{
     background-color: #ddd;
   }
   
   #LoginButton{
-    background-color: white;
+    background-color:orange;
     color: orange;
     margin-left: 0%;
   }
+
 .sarah tr{
     text-align: center;
     margin-left: 1%;
@@ -273,7 +273,6 @@ a {
     background-color: #f2f2f2;
   }
 
-
 .sarah th{
     /*padding: 20px 15px;*/
     text-align: left;
@@ -282,15 +281,12 @@ a {
     color: #fff;
     text-transform: uppercase;
     background-color:#00b891;
-
-}
-
+  }
 
 #RoutesForm2:hover{
   color: #3099AA;
   background-color: white;
 }
-
 
 #Routes:hover{
   color: #3088FF;
@@ -299,9 +295,8 @@ a {
 
 #LoginButton{
   background-color: white;
-  color: orange;
+  /* color: orange; */
 }
-
 
 #LoginButton:hover{
   color: green;

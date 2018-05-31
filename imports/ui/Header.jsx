@@ -7,11 +7,6 @@ import route from '/imports/routing/router.js';
 goToOperators = () => {
     route.go('/Operators')
 }
-
-
-
-
-
 export default class Header extends Component {
     constructor(props) {
         super(props);
@@ -38,7 +33,7 @@ export default class Header extends Component {
         
     }
     render() {
-        return(
+        return (
             <div>
                 <div className="header">
                     <div className="container">
@@ -50,10 +45,8 @@ export default class Header extends Component {
                                     </div>
                                 </div>
                                 <div className="col s12 l4">
-                                    <p className="left-align paragraph-header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit recusandae corrupti impedit tempora voluptas nostrum quod error nisi hic quas, nihil rem earum commodi tempora voluptas nostrum quod error nisi hic quas, nihil. <i className="material-icons">sentiment_very_satisfied</i> </p>
-                                    <p>
-                                        <a href="#" className="waves-effect btn-large amber accent-4">Learn more</a>
-                                    </p>
+                                    <p className="left-align paragraph-header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit recusandae corrupti impedit tempora voluptas nostrum quod error nisi hic quas, nihil rem earum commodi tempora voluptas nostrum quod error nisi hic quas, nihil. <i className="material-icons">sentiment_very_satisfied</i>
+                                    <a href="#" className="waves-effect btn-large amber accent-4">Learn more</a></p>
                                 </div>
                                 <div className="col s12 l8">
                                     <div className="card hoverable">
@@ -66,41 +59,40 @@ export default class Header extends Component {
                                         </div>
                                         <div className="card-reveal">
                                             <span className="card-title grey-text text-darken-4"><i className="material-icons right">close</i>Tell us where you want to go <i className="material-icons left"></i></span>
-                                            <div>
-                                                <form action="" onSubmit={this.handleSubmit}>
-                                                    <div className="input-field"> 
-                                                        <div className="white">
-                                                            
-                                                            <Input s={12} type='select' defaultValue={this.state.value} onChange={this.handleChange} name="select">
-                                                                <option value='from'>From</option>
-                                                                <option value='kitwe'>Kitwe</option>
-                                                                <option value='lusaka'>Lusaka</option>
-                                                                <option value='kasama'>Kasama</option>
-                                                                <option value='solwezi'>Solwezi</option>
-                                                                <option value='chipata'>Chipata</option>
-                                                                <option value='livingstone'>Livingstone</option>
-                                                                <option value='mansa'>Mansa</option>
-                                                                <option value='mongu'>Mongu</option>
-                                                            </Input>
-                                                            <Input s={12} type='select' defaultValue={this.state.value} onChange={this.handleChange} name="select">
-                                                            <option value='to'>To</option>
-                                                                <option value='kitwe'>Kitwe</option>
-                                                                <option value='lusaka'>Lusaka</option>
-                                                                <option value='kasama'>Kasama</option>
-                                                                <option value='solwezi'>Solwezi</option>
-                                                                <option value='chipata'>Chipata</option>
-                                                                <option value='livingstone'>Livingstone</option>
-                                                                <option value='mansa'>Mansa</option>
-                                                                <option value='mongu'>Mongu</option>
-                                                            </Input>
-                                                            
-                                                            <Input s={12} name='date' type='date' onChange={function(e, value) {}} placeholder="Pick a Day" />
-                                                            <Input s={12} name='time' type='time' onChange={function(e, value) {}} placeholder="Pick a Time" />
-                                                            <a href="/Operators" className="waves-effect btn-large amber accent-4 left-align p2" onClick={this.goToOperators}>Reserve Ticket</a>
-                                                        </div>
+                                            <form action="" onSubmit={this.handleSubmit}>
+                                                <div className="input-field"> 
+                                                    <div className="white">
+                                                        
+                                                        <Input s={12} type='select' defaultValue={this.state.value} onChange={this.handleChange} name="select">
+                                                            <option value='from'>From</option>
+                                                            <option value='kitwe'>Kitwe</option>
+                                                            <option value='lusaka'>Lusaka</option>
+                                                            <option value='kasama'>Kasama</option>
+                                                            <option value='solwezi'>Solwezi</option>
+                                                            <option value='chipata'>Chipata</option>
+                                                            <option value='livingstone'>Livingstone</option>
+                                                            <option value='mansa'>Mansa</option>
+                                                            <option value='mongu'>Mongu</option>
+                                                        </Input>
+                                                        <Input s={12} type='select' defaultValue={this.state.value} onChange={this.handleChange} name="select">
+                                                        <option value='to'>To</option>
+                                                            <option value='kitwe'>Kitwe</option>
+                                                            <option value='lusaka'>Lusaka</option>
+                                                            <option value='kasama'>Kasama</option>
+                                                            <option value='solwezi'>Solwezi</option>
+                                                            <option value='chipata'>Chipata</option>
+                                                            <option value='livingstone'>Livingstone</option>
+                                                            <option value='mansa'>Mansa</option>
+                                                            <option value='mongu'>Mongu</option>
+                                                        </Input>
+                                            
+                                                        
+                                                        <Input s={12} name='date' type='date' onChange={function(e, value) {}} placeholder="Pick a Day" />
+                                                        <Input s={12} name='time' type='time' onChange={function(e, value) {}} placeholder="Pick a Time" />
+                                                        <a href="/Operators" className="waves-effect btn-large amber accent-4 left-align p2" onClick={this.goToOperators}>Reserve Ticket</a>
                                                     </div>
-                                                </form>
-                                            </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
