@@ -8,8 +8,8 @@ export default class Footer extends Component {
     render() {
         return(
                 <div>
-                    <footer className="page-footer">
-                        <div className="container" id="footer">
+                    <footer className="page-footer" id="footer">
+                        <div className="container">
                             <div className="row">
                             <div className="col l6 s12">
                             
@@ -18,7 +18,7 @@ export default class Footer extends Component {
                                 </h5>
 
                 
-                                <p className="grey-text text-darken-1">This website and its content is copyright <br/> of  <span id="logo-footer"> <a>On|Bus Services</a> </span>. All rights reserved.</p>
+                                <p className="grey-text text-darken-1">This website and its content is copyright <br/> of  <span id="logo-footer-small"> <a>On|Bus Services</a> </span>. All rights reserved.</p>
                             </div>
                             <div className="col l4 offset-l2 s12 right-align">
                                 <h5 className="white-text">Links</h5>

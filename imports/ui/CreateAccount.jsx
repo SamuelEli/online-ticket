@@ -74,17 +74,15 @@ export default class CreateAccount extends Component {
 
     renderLogin(){
       return(
-
       // loginForm
-  <div id="modal1" className="modal">
-    <div className="modal-content">
-      <LogIn/>
-    </div>
-    <div id="modal1" className="modal modal-fixed-footer">
-    </div>
-    <a href="#" className="modal-close waves-effect waves-green btn-flat"></a>
-  </div>
-  
+        <div id="modal1" className="modal">
+          <div className="modal-content">
+            <LogIn/>
+          </div>
+          <div id="modal1" className="modal modal-fixed-footer">
+          </div>
+          <a href="#" className="modal-close waves-effect waves-green btn-flat"></a>
+        </div>
       )
     }
     render() {
@@ -106,41 +104,42 @@ export default class CreateAccount extends Component {
                         <div className="input-field">
                           <i className="material-icons prefix">account_circle</i>
                           <input type="text" className="form-control" name="name" label="Full name" required />
-                          <label for="icon_prefix">Full name</label>
+                          <label htmlFor="icon_prefix">FULL NAME</label>
                         </div>
+                        
 
                         <div className="input-field">
                         <i className="material-icons prefix">email</i>
                             <input type="email" className="form-control" name="email" label="Email Address" required/>
-                            <label for="icon_prefix">email</label>
+                            <label htmlFor="icon_prefix">EMAIL</label>
                         </div>
-                        <br/>
+                        
 
                         <div className="input-field">
                         <i className="material-icons prefix">phone</i>
-                            <input type="number" className="form-control" name="phone" label="Telephone" required/>
-                            <label for="icon_prefix">Telephone</label>
+                            <input type="tel" className="form-control" name="phone" label="Telephone" required/>
+                            <label htmlFor="icon_prefix">PHONE NUMBER</label>
                         </div>
-                        <br/>
+                        
 
                         <div className="input-field">
                         <i className="material-icons prefix">visibility</i>
                             <input type="password"  className="form-control" name="password"  label="Password" required/>
                             <p style={{color:"red"}}>{this.state.error2}</p>
-                            <label for="icon_prefix">Password</label>
+                            <label htmlFor="icon_prefix">PASSWORD</label>
                         </div>
-                        <br/>
+                        
 
                         <div className="input-field">
                         <i className="material-icons prefix">visibility</i>
                             <input type="password" className="form-control" name="password2" label="Confirm password" required/>
                             <p style={{color:"red"}}>{this.state.error}</p>
-                            <label for="icon_prefix">Confirm password</label>
+                            <label htmlFor="icon_prefix">CONFIRM PASSWORD</label>
                         </div>
-                        <br/>
+                        
 
                         <div className="text-center">
-                          <input type="submit" value="CreateAccount" id="submitbtn"/>
+                          <input type="submit" value="CREATE ACCOUNT" className="waves-effect btn amber accent-4"/>
                         </div>
                     </form>
                   </div>

@@ -11,8 +11,8 @@ import RoutesForm2 from '/imports/ui/RoutesComponent2.jsx';
 
 route('/', HomePage);
 route ('/CreateAccount', CreateAccount);
-route('/ReservationForm', ReservationForm)
+route('/ReservationForm', ReservationForm);
 route('/Routes',RoutesComponent);
-route('/Operators', Operators)
+route('/Operators', Operators);
 route('/Routes',Routes);
 route('/RoutesForm2',RoutesForm2);

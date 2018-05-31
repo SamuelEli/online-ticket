@@ -35,7 +35,7 @@ export default class ReservationForm extends Component {
             this.setState({
                 error: 'Please enter a valid Phone Number!'
             })
-        } return;
+        } 
         
 
         if(idNumber.length !== 11) {
@@ -46,15 +46,12 @@ export default class ReservationForm extends Component {
         
     }
 
-    
-
 
     render() {
         return(
             <div>
-            
+                <Navbar/>
                 <div>
-                    <Navbar/>
                     <br/>
                     <br/>
                     <div className="backgroud-page">

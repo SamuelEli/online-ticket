@@ -16,7 +16,7 @@ body {
 .header {
   background: linear-gradient(to bottom, #00b891 20%,#1ebcb4 80%);
   color: #fff;
-  height: 190vh;
+  height: 140vh;
   position: relative;
   padding-bottom: 2rem;
   clip-path: polygon(100% 100%, 0 90%, 0 0, 100% 0);
@@ -58,7 +58,13 @@ h3 {
 
 #logo-footer {
   font-family: 'Pacifico', cursive;
+  color: #ffab00;
   /* text-decoration-line: underline; */
+}
+
+#logo-footer-small {
+  font-family: 'Pacifico', cursive;
+  color: #ffab00;
 }
 
 h6 a {
@@ -79,7 +85,7 @@ Input::placeholder {
 
 #button {
   border: 2px solid #ffffff;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 #about {
@@ -175,6 +181,10 @@ a {
 
 }
 
+.footer-background {
+  background-image: url('images/paisley.png');
+}
+
 /* Samuel SignUp */
 .CreateAccount{
   width: 40%;
@@ -209,8 +219,7 @@ a {
 #LoginButton{
   background-color: white;
   color: orange;
-}
-    margin-bottom: 0%;
+  margin-bottom: 0%;
 }
 
 #footer{
