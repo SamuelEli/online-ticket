@@ -11,7 +11,22 @@ body {
   font-weight: normal;
   color: #575859;
   letter-spacing: .5px;
+  display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
+
+main {
+  flex: 1 0 auto;
+}
+
+
+footer {
+  position: absolute;
+  margin-bottom: 0;
+  width: 100%;
+}
+
 
 .header {
   background: linear-gradient(to bottom, #00b891 20%,#1ebcb4 80%);
@@ -189,7 +204,7 @@ Input::placeholder {
   margin: 0rem 0;
   width: auto;
   cursor: pointer;
-  transition: .7s background ease;
+  transition: .7s ;
 }
 
 #submitbtn{

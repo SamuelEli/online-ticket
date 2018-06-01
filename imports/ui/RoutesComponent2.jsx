@@ -13,7 +13,7 @@ export default  class RoutesForm2 extends Component{
         <div>
           <Navbar/>
         </div>
-        <h3>international fares table</h3>
+        <h3>continental fares table</h3>
         <h5 className="header-two">for local fares and bus schedules
 
         <a
@@ -34,100 +34,100 @@ export default  class RoutesForm2 extends Component{
 
         <tbody>
           <tr>
-            <td>LUSAKA</td>
-            <td>MALAWI</td>
+            <td>WINDHOEK</td>
+            <td>JOHANNESBURG</td>
             <td>04:30hours</td>
-            <td>K185</td>
-            <td>K185</td>
+            <td>07:45 p.m</td>
+            <td>K185-K250</td>
           </tr>
 
           <tr>
-            <td>LIVINGSTONE</td>
-            <td>ZIMBABWE</td>
+            <td>TUNIS</td>
+            <td>NAIROBI</td>
             <td>04:00hours</td>
-            <td>K170</td>
-            <td>K185</td>
+            <td>24 hrs or more</td>
+            <td>K500-K600</td>
           </tr>
           <tr>
-            <td>DRC</td>
-            <td>NDOLA</td>
+            <td>DAR ES SALAAM</td>
+            <td>CAPE TOWN</td>
             <td>07.00hours</td>
-            <td>K90</td>
-            <td>K185</td>
+            <td>24 hrs or more</td>
+            <td>K300-K460</td>
 
           </tr>
           <tr>
-            <td>LIVINGSTONE</td>
-            <td>NAMIBIA</td>
+            <td>KIGALI</td>
+            <td>KUMASI</td>
             <td>16.00hours</td>
-            <td>K1270</td>
-            <td>K185</td>
+            <td>10:00 a.m</td>
+            <td>K456-K230</td>
           </tr>
 
           <tr>
-            <td>ANGOLAs</td>
-            <td>SOLWEZI</td>
+            <td>LIBREVILLE</td>
+            <td>LAGOS</td>
             <td>8.00hours</td>
-            <td>K150</td>
-            <td>K185</td>
+            <td>03:53 p.m</td>
+            <td>K134-K349</td>
 
           </tr>
 
           <tr>
-            <td>TANZANIA</td>
-            <td>MANSA</td>
+            <td>GABORONE</td>
+            <td>ACCRA</td>
             <td>09.00hours</td>
-            <td>K100</td>
-            <td>K185</td>
+            <td>15:00 a.m</td>
+            <td>K633-K984</td>
           </tr>
 
           <tr>
-            <td>CHOMA</td>
-            <td>ZIMBABWE</td>
+            <td>ALGIERS</td>
+            <td>GRAHAMSTOWN</td>
             <td>15:00hours</td>
-            <td>K150</td>
-            <td>K185</td>
+            <td>09:00 p.m</td>
+            <td>K123-K638</td>
 
           </tr>
 
           <tr>
-            <td>SIAVONGA</td>
-            <td>BOTSWANA</td>
+            <td>ASMARA</td>
+            <td>WESTERN CAPE</td>
             <td>12:00hours</td>
-            <td>K120</td>
-            <td>K185</td>
+            <td>06:00 a.m</td>
+            <td>K187-K237</td>
           </tr>
 
-
           <tr>
-            <td>CHILLIABOMBWE</td>
-            <td>DRC</td>
+            <td>LUANDA</td>
+            <td>PORT-NOVO</td>
             <td>10:00hours</td>
-            <td>K260</td>
-            <td>K185</td>
+            <td>03:00 a.m</td>
+            <td>K222-K375</td>
           </tr>
 
           <tr>
-            <td>KASAMA</td>
-            <td>NAMIBAIA</td>
-            <td>15:00hours</td>
-            <td>K150</td>
-            <td>K185</td>
+            <td>CAIRO</td>
+            <td>ADDIS ABABA</td>
+            <td>06:00hours</td>
+            <td>12: 00p.m</td>
+            <td>K185-K200</td>
           </tr>
 
           <tr>
-            <td>LUSAKA</td>
-            <td>TANZANIA</td>
-            <td>15:00hours</td>
-            <td>K150</td>
-            <td>K185</td>
+            <td>OUAGADOUGOU</td>
+            <td>YAOUNDE</td>
+            <td>08:00hours</td>
+            <td>07:00p.m</td>
+            <td>K150-K185</td>
           </tr>
+
           <tr>
-            <td>kITWE</td>
-            <td>SOUTHAFRICA</td>
-            <td>07.00hours</td>
-            <td>K190</td>
-            <td>K185</td>
+            <td>ANTANANARIVO</td>
+            <td>KHARTOUM</td>
+            <td>07:00hours</td>
+            <td>06:00a.m</td>
+            <td>K230-K254</td>
           </tr>
         </tbody>
       </Table>

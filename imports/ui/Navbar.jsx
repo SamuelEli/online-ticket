@@ -26,11 +26,18 @@ export default class Navbar extends Component {
         
         $(document).ready(function(){
             setTimeout(()=>{
+                M.toast({html: 'welcome,beloved.'})
             $('.sidenav').sidenav();
             },2000)
         });
 
 
+        this.x();
+
+    }
+
+
+    x(){
         if(Meteor.userId()){
             $("#logOut2").show();
             $("#logOut1").hide();
@@ -62,13 +69,21 @@ export default class Navbar extends Component {
             
     logOut = (e) => {
         e.preventDefault()
-        Meteor.logout();
-        window.location.reload();
-        route.go('/')
+        Meteor.logout(rep=>{
+                this.x();   
+            route.go('/')
+
+        });
+        // window.location.reload();
     }
 
 
+
+
+
     render() {
+
+
         return (
             <div>
                 <nav className="Navbar">

@@ -34,7 +34,7 @@ export default class Home extends Component {
 
                             <div className="items">
                                 <div className="col s12 l4">
-                                    <div className="card">
+                                    <div className="card hove">
                                         <div className="card-image">
                                             <img src="images/Zambia-3.png" alt="" height="190"/>
                                         </div>
@@ -46,7 +46,7 @@ export default class Home extends Component {
                                     </div>
                                 </div>
                                 <div className="col s12 l4">
-                                    <div className="card horizontal">
+                                    <div className="card hove">
                                         <div className="card-image">
                                             <img src="images/VicFalls.jpg" alt="" height="190"/>
                                         </div>
@@ -58,7 +58,7 @@ export default class Home extends Component {
                                     </div>
                                 </div>
                                 <div className="col s12 l4">
-                                    <div className="card">
+                                    <div className="card hove">
                                         <div className="card-image">
                                             <img src="images/Livingstone-Zambia.jpg" alt="" height="190"/>
                                         </div>

@@ -4,7 +4,6 @@ import  { Meteor }  from 'meteor/meteor';
 import { Accounts } from 'meteor/accounts-base';
 import route from '/imports/routing/router.js';
 
-
 export default class Login extends Component{
     // constructor(props){
     //   super(props);

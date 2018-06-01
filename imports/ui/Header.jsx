@@ -25,13 +25,19 @@ export default class Header extends Component {
             
         }
 
-        // $(document).ready(function(){
-        //     setTimeout(()=>{
-        //     $('.select').material_select();
-        //     },100000)
-        // });
+        $(document).ready(function(){
+            setTimeout(()=>{
+            // $('.select').material_select();
+            },200000)
+        });
         
     }
+
+        componentDidMount(){
+            $('.dropdown-trigger').dropdown();
+        }
+
+
     render() {
         return (
             <div>
@@ -45,8 +51,9 @@ export default class Header extends Component {
                                     </div>
                                 </div>
                                 <div className="col s12 l4">
-                                    <p className="left-align paragraph-header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit recusandae corrupti impedit tempora voluptas nostrum quod error nisi hic quas, nihil rem earum commodi tempora voluptas nostrum quod error nisi hic quas, nihil. <i className="material-icons">sentiment_very_satisfied</i>
-                                    <a href="#" className="waves-effect btn-large amber accent-4">Learn more</a></p>
+                                    <p className="left-align paragraph-header">When did it all begin?This intuitive thirst to explore what the world has in store.Neolithic blues, Great empires,and others all knew one thing.That travelling has always been a trait of mankind's being.<i className="material-icons">sentiment_very_satisfied</i>
+                                    </p>
+                                    {/* <a href="#" className="waves-effect btn-large amber accent-4">Learn more</a></p> */}
                                 </div>
                                 <div className="col s12 l8">
                                     <div className="card hoverable">
@@ -54,39 +61,19 @@ export default class Header extends Component {
                                             <img className="activator" src="images/black.svg" alt=""/>
                                         </div>
                                         <div>
-                                            <span className="card-title activator amber-text text-accent-4">Card Title<i className="material-icons right">more_vert</i></span>
-                                            <p><a href="#">Click to reserve your Ticket</a></p>
+                                            <span className="card-title activator grey-text text-accent-4">CLICK TO RESERVE YOUR TICKET<i className="material-icons right">more_vert</i></span>
+                                            {/* <p><a href="#">Click to reserve your Ticket</a></p> */}
                                         </div>
                                         <div className="card-reveal">
+
                                             <span className="card-title grey-text text-darken-4"><i className="material-icons right">close</i>Tell us where you want to go <i className="material-icons left"></i></span>
                                             <form action="" onSubmit={this.handleSubmit}>
                                                 <div className="input-field"> 
                                                     <div className="white">
-                                                        
-                                                        <Input s={12} type='select' defaultValue={this.state.value} onChange={this.handleChange} name="select">
-                                                            <option value='from'>From</option>
-                                                            <option value='kitwe'>Kitwe</option>
-                                                            <option value='lusaka'>Lusaka</option>
-                                                            <option value='kasama'>Kasama</option>
-                                                            <option value='solwezi'>Solwezi</option>
-                                                            <option value='chipata'>Chipata</option>
-                                                            <option value='livingstone'>Livingstone</option>
-                                                            <option value='mansa'>Mansa</option>
-                                                            <option value='mongu'>Mongu</option>
-                                                        </Input>
-                                                        <Input s={12} type='select' defaultValue={this.state.value} onChange={this.handleChange} name="select">
-                                                        <option value='to'>To</option>
-                                                            <option value='kitwe'>Kitwe</option>
-                                                            <option value='lusaka'>Lusaka</option>
-                                                            <option value='kasama'>Kasama</option>
-                                                            <option value='solwezi'>Solwezi</option>
-                                                            <option value='chipata'>Chipata</option>
-                                                            <option value='livingstone'>Livingstone</option>
-                                                            <option value='mansa'>Mansa</option>
-                                                            <option value='mongu'>Mongu</option>
-                                                        </Input>
-                                            
-                                                        
+
+                                                       <Input s={12} name='date' type='text' onChange={function(e, value) {}} placeholder=" TYPE FROM" />
+                                                        <Input s={12} name='time' type='text' onChange={function(e, value) {}} placeholder="TYPE TO" />
+
                                                         <Input s={12} name='date' type='date' onChange={function(e, value) {}} placeholder="Pick a Day" />
                                                         <Input s={12} name='time' type='time' onChange={function(e, value) {}} placeholder="Pick a Time" />
                                                         <a href="/Operators" className="waves-effect btn-large amber accent-4 left-align p2" onClick={this.goToOperators}>Reserve Ticket</a>

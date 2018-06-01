@@ -38,95 +38,95 @@ export default  class RoutesForm extends Component{
             <td>LUSAKA</td>
             <td>SOLWEZI</td>
             <td>04:30hours</td>
-            <td>K85</td>
-            <td>K85</td>
+            <td>07:45p.m</td>
+            <td>K85-100</td>
           </tr>
 
           <tr>
             <td>LIVINGSTONE</td>
             <td>KITWE</td>
-            <td>04:00hours</td>
-            <td>K70</td>
-            <td>K85</td>
+            <td>05:00hours</td>
+            <td>16:00hours</td>
+            <td>K90-K120</td>
           </tr>
           <tr>
             <td>KITWE</td>
             <td>NDOLA</td>
-            <td>07.00hours</td>
-            <td>K90</td>
-            <td>K85</td>
+            <td>07:00hours</td>
+            <td>20:hours</td>
+            <td>K120-130</td>
           </tr>
           <tr>
             <td>LIVINGSTONE</td>
-            <td>CHAIPATA</td>
-            <td>16.00hours</td>
-            <td>K70</td>
-            <td>K85</td>
+            <td>CHIPATA</td>
+            <td>16:00hours</td>
+            <td>06:00hours</td>
+            <td>K100-K120</td>
           </tr>
 
           <tr>
             <td>SOLWEZI</td>
             <td>LUANGWA</td>
-            <td>8.00hours</td>
-            <td>K150</td>
-            <td>K85</td>
+            <td>8:00hours</td>
+            <td>18:00hours</td>
+            <td>K100-K140</td>
           </tr>
 
           <tr>
             <td>CHINGOLA</td>
             <td>MANSA</td>
-            <td>09.00hours</td>
-            <td>K100</td>
-            <td>K85</td>
+            <td>02:00hours</td>
+            <td>08:00hours</td>
+            <td>K85-K100</td>
           </tr>
 
           <tr>
             <td>MPIKA</td>
             <td>CHOMA</td>
             <td>15:00hours</td>
-            <td>K50</td>
-            <td>K85</td>
+            <td>23:00hours</td>
+            <td>K85-K90</td>
 
           </tr>
 
           <tr>
             <td>SIAVONGA</td>
-            <td>MONGO</td>
+            <td>MONGU</td>
             <td>12:00hours</td>
-            <td>K120</td>
-            <td>K85</td>
+            <td>08:00hours</td>
+            <td>K95-K160</td>
           </tr>
 
 
           <tr>
             <td>KAFUE</td>
-            <td>CHILLIABOMBWE</td>
+            <td>CHILILABOMBWE</td>
             <td>10:00hours</td>
-            <td>K60</td>
-            <td>K85</td>
+            <td>24:00hour</td>
+            <td>K100-K160</td>
           </tr>
 
           <tr>
             <td>MAZABUKA</td>
             <td>KASAMA</td>
-            <td>15:00hours</td>
-            <td>K150</td>
-            <td>K85</td>
+            <td>19:00hours</td>
+            <td>13:00hours</td>
+            <td>K110-K170</td>
           </tr>
 
           <tr>
             <td>KABWE</td>
             <td>MONZE</td>
-            <td>15:00hours</td>
-            <td>K150</td>
-            <td>K85</td>
+            <td>17:00hours</td>
+            <td>09:hpurs</td>
+            <td>K160-K190</td>
           </tr>
           <tr>
             <td>kITWE</td>
             <td>NDOLA</td>
-            <td>07.00hours</td>
-            <td>K90</td>
-            <td>K85</td>
+            <td>07:00hours</td>
+            <td>21:45</td>
+            <td>K 200-K250</td>
           </tr>
         </tbody>
       </Table>
